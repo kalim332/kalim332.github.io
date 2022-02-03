@@ -5,29 +5,29 @@ html {
 h1 {
     color: rgb(208, 159, 233);
     font-family: Helvetica;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 h2 {
     color: rgb(155, 119, 174);
     font-family: Helvetica;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h3 {
     color: rgb(121, 92, 136);
     font-family: Helvetica;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h4 {
     color: rgb(90, 69, 101);
     font-family: Helvetica;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h5 {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 12px;
 }
