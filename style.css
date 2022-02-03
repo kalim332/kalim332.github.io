@@ -3,31 +3,42 @@ html {
 }
 
 h1 {
+    color: rgb(155, 119, 174);
+    font-family: Helvetica;
+    font-size: 30px;
+    text-indent: 30px;
+}
+
+
+h2 {
     color: rgb(208, 159, 233);
     font-family: Helvetica;
     font-size: 80px;
-}
-
-h2 {
-    color: rgb(155, 119, 174);
-    font-family: Helvetica;
-    font-size: 40px;
+    text-indent: 30px;
 }
 
 h3 {
-    color: rgb(121, 92, 136);
+    color: rgb(155, 119, 174);
     font-family: Helvetica;
     font-size: 30px;
+    text-indent: 30px;
 }
 
-h4 {
-    color: rgb(90, 69, 101);
+#link {
+    color: rgb(98, 74, 109);
     font-family: Helvetica;
     font-size: 20px;
+    text-indent: 30px;
+    }
+
+a,a:link {
+    text-decoration: none;
+    color: rgb(98, 74, 109);
+    font-family: Helvetica;
+    font-size: 20px;
+    text-indent: 30px;
 }
 
-h5 {
-    color: rgb(0, 0, 0);
-    font-family: Helvetica;
-    font-size: 12px;
+a:hover {
+    color: rgb(208, 159, 233);
 }
