@@ -1,0 +1,41 @@
+    img{
+    max-width: 100%;
+    max-height: auto;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 12px 50px;
+        margin: px 0;
+        box-sizing: border-box;
+        border-color: black;
+      }
+    
+     /* .container-1{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+     } */
+    
+     #overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index:1;
+     }
+    
+     #myVideo {
+       max-width: 100%;
+       max-height: auto;
+     }
+    
+    
+    /* video{
+       position: fixed;
+       right: 0;
+       bottom: 0;
+       min-width: 100%;
+       min-height: 100%;
+     } */
