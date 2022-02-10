@@ -1,0 +1,113 @@
+html {
+    background: #000000;
+}
+
+h1 { 
+    display: flex;
+    position:relative; 
+    justify-content: center;
+    align-content: center;
+    padding: 15px;  
+    color:  #ffffff;
+    font-family: Verdana;
+    font-size: 60px;
+    letter-spacing: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 5px;
+    background-color: #000000;
+  }
+
+.container-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    vertical-align: baseline;
+    background-color:rgb(0, 0, 0);
+  }
+
+.container-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    vertical-align: baseline;
+    background-color:rgb(0, 0, 0);
+  }
+
+.container-3 {
+    display: flex;
+    position:relative; 
+    justify-content: center;
+    align-content: center;
+    padding: 25px;  
+    color:  #ffffff;
+    font-family: Verdana;
+    font-size: 25px;
+    letter-spacing: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 5px;
+    background-color: #000000;
+  }
+
+img{
+    display: flex;
+    position:relative; 
+    justify-content: center;
+    align-content: center;  
+    max-width: 100%;
+    height: auto;
+  }
+
+p { 
+    display:flex;
+    position:relative; 
+    justify-content: left;
+    align-content: left;
+    padding: 15px;  
+    color: #DF3C3E;
+    font-family: Verdana;
+    font-size: 25px;
+  }
+
+h3 { 
+    display: flex;
+    position:relative; 
+    justify-content: center;
+    align-content: center;
+    padding: 20px;  
+    color:#ffffff;
+    font-family: Verdana;
+    font-size: 30px;
+    background-color: #313470;
+  }
+
+
+#list1 { 
+    display:flex;
+    position:relative; 
+    justify-content: left;
+    align-content: left;
+    padding: 10px;  
+    margin: 10px;
+    color: #EABE44;
+    font-family: Verdana;
+    font-size: 25px;
+  }
+
+#list2 { 
+    display:flex;
+    position:relative; 
+    justify-content: left;
+    align-content: left;
+    padding: 10px;  
+    margin: 10px;
+    color: #5357bd;
+    font-family: Verdana;
+    font-size: 25px;
+  }
+
+mark {
+    background-color: rgb(218, 227, 255);
+    color: rgb(85, 119, 220);
+  }
