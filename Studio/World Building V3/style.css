@@ -19,6 +19,16 @@
    src: url("Fonts/dyslexic/OpenDyslexic-Regular.otf") format("opentype");
 }
 
+@font-face {
+   font-family: 'OpenDyslexic';
+   src: url('fonts/dyslexia/OpenDyslexic-Regular.woff2') format('woff2'),
+       url('fonts/dyslexia/OpenDyslexic-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
 
 html{
    background-color:  rgb(255, 255, 255);
@@ -163,7 +173,7 @@ a:hover {
 }
 
 .box1 :hover {
-   font-family:'dyslexic';
+   font-family:'OpenDyslexic';
    font-size: 11.95rem;
    background-color: rgb(255, 255, 255);
    color: rgb(0, 0, 0);
