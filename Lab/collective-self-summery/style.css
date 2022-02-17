@@ -93,7 +93,7 @@ p{
    padding: .5rem;
 }
 
-ul{
+.box2 ul{
    font-family: 'Trebuchet MS',sans-serif;
    font-size: 20px;
    line-height: 140%;
@@ -102,7 +102,7 @@ ul{
    margin-left: 1rem;
 }
 
-ol{
+.box3 ol{
    font-family: 'Trebuchet MS',sans-serif;
    font-size: 20px;
    line-height: 140%;
@@ -111,20 +111,35 @@ ol{
    margin-left: 2rem;
 }
 
-
-
- a:link {
-   /* text-decoration: none; */
-   color: rgb(255, 255, 255);
- }
- 
- a:visited {
+a:link {
    text-decoration: none;
    color: rgb(255, 255, 255);
  }
  
- a:hover {
+a:visited {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+ }
+ 
+a:hover {
    color: red;
+   text-decoration: none;
+ }
+
+
+.box1 a:link {
+   text-decoration: underline;
+   color: rgb(255, 255, 255);
+ }
+ 
+.box1 a:visited {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+ }
+ 
+.box1 a:hover {
+   color: red;
+   text-decoration: underline;
  }
 
 
@@ -152,7 +167,6 @@ ol{
    margin: 1rem;
    margin-right: 2rem;
 }
-
 
 
 .box1{
