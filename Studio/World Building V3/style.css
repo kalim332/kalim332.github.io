@@ -54,7 +54,7 @@ body{
 }
 
 
-h4{
+/* h4{
    font-family:'helvetica';
    color: rgb(125, 125, 125);
    background-color: rgb(255, 255, 255);
@@ -65,7 +65,7 @@ h4{
    text-align: center;
    margin: .6rem;
    padding: .6rem;
-}
+} */
 
 h2{
    font-family:'helvetica';
@@ -109,6 +109,18 @@ h2{
    padding: 9rem;
 }
 
+.home :link{
+   text-decoration: none;
+}
+
+.home :visited {
+   text-decoration: none;
+ }
+
+.home :hover{
+   text-decoration: none;
+}
+
 /* .home :hover{
    background-color: rgb(0, 0, 0);
    color: rgb(255, 255, 255);
@@ -138,25 +150,6 @@ h2{
    color: red;
    text-decoration: none;
  } */
-
-
-
-
-
-a:link {
-   text-decoration: none;
- }
-
- 
-a:visited {
-   text-decoration: none;
-   color: rgb(255, 255, 255);
- }
- 
-a:hover {
-   color: red;
-   text-decoration: none;
- }
 
 
 
@@ -191,41 +184,142 @@ a:hover {
    grid-template-columns: repeat(12,1fr);
 }
 
+
+
 .nav1{
+   text-align: center;
+   margin: .6rem;
+   padding: .6rem;
    grid-column: 1/7;
-   margin: .2rem;
 }
+
+.nav1 h4{
+   font-family: 'helvetica';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .6rem;
+   padding: .6rem;
+}
+
+.nav1 :link{
+   text-decoration: none;
+}
+
+.nav1 :visited {
+   text-decoration: none;
+ }
 
 .nav1 :hover{
+   text-decoration: none;
    background-color: rgb(210, 210, 210);
 }
+
+
 
 .nav2{
+   text-align: center;
+   margin: .5rem;
+   padding: 1rem;
    grid-column: 7/9;
-   margin: .2rem;
 }
+
+.nav2 h4{
+   font-family: 'OpenDyslexic';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .2rem;
+   padding: .2rem;
+}
+
+.nav2 :link{
+   text-decoration: none;
+}
+
+.nav2 :visited {
+   text-decoration: none;
+ }
 
 .nav2 :hover{
+   text-decoration: none;
    background-color: rgb(210, 210, 210);
 }
+
+
 
 .nav3{
+   text-align: center;
+   margin: 0.1rem;
+   padding: 1.1rem;
    grid-column: 9/11;
-   margin: .2rem;
 }
+
+.nav3 h4{
+   font-family: 'Sans Forgetica';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .5rem;
+   padding: .5rem;
+}
+
+.nav3 :link{
+   text-decoration: none;
+}
+
+.nav3 :visited {
+   text-decoration: none;
+ }
 
 .nav3 :hover{
+   text-decoration: none;
    background-color: rgb(210, 210, 210);
 }
+
+
 
 .nav4{
+   text-align: center;
+   margin: 0.1rem;
+   padding: 1.45rem;
    grid-column: 11/-1;
-   margin: .2rem;
 }
 
+.nav4 h4{
+   font-family: 'ZXX Noise';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .2rem;
+   padding: .5rem;
+}
+
+.nav4 :link{
+   text-decoration: none;
+}
+
+.nav4 :visited {
+   text-decoration: none;
+ }
+
 .nav4 :hover{
+   text-decoration: none;
    background-color: rgb(210, 210, 210);
 }
+
+ 
+
+
+
 
 
 .box1-1{
