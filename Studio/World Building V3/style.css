@@ -15,11 +15,6 @@
 }
 
 @font-face {
-   font-family:'dyslexic';
-   src: url("Fonts/dyslexic/OpenDyslexic-Regular.otf") format("opentype");
-}
-
-@font-face {
    font-family: 'OpenDyslexic';
    src: url('fonts/dyslexia/OpenDyslexic-Regular.woff2') format('woff2'),
        url('fonts/dyslexia/OpenDyslexic-Regular.woff') format('woff');
@@ -27,6 +22,25 @@
    font-style: normal;
    font-display: swap;
 }
+
+@font-face {
+   font-family: 'Sans Forgetica';
+   src: url('fonts/memorization/SansForgetica-Regular.woff2') format('woff2'),
+       url('fonts/memorization/SansForgetica-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'ZXX Noise';
+   src: url('fonts/Acessability/ZXX-Noise.woff2') format('woff2'),
+       url('fonts/Acessability/ZXX-Noise.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
 
 
 
@@ -78,9 +92,59 @@ h2{
    padding: .5rem;
 } */
 
+.home{
+   display: grid;
+}
+
+.home h1{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   /* font-family: 'Helvetica'; */
+   font-size: 8rem;
+   /* letter-spacing: 8px; */
+   text-align: center;
+   /* grid-column: 1/-1; */
+   margin: 0rem;
+   padding: 6rem;
+}
+
+/* .home :hover{
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+} */
+
+.blink_me {
+   animation: blinker 1s linear infinite;
+ }
+ 
+ @keyframes blinker {  
+   0% { font-family: 'OpenDyslexic'; }
+   30% { font-family: 'Sans Forgetica'; }
+   60% { font-family: 'ZXX Noise'; }
+   100% { font-family: 'OpenDyslexic'; }
+ }
+
+/* .home a:link {
+   text-decoration: none;
+ }
+ 
+.home a:visited {
+   text-decoration: none;
+ }
+ 
+.home a:hover {
+   color: red;
+   text-decoration: none;
+ } */
+
+
+
+
+
 a:link {
    text-decoration: none;
  }
+
  
 a:visited {
    text-decoration: none;
