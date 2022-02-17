@@ -118,10 +118,10 @@ h2{
  }
  
  @keyframes blinker {  
-   0% { font-family: 'OpenDyslexic'; }
+   0% { font-family: 'helvetica'; }
    30% { font-family: 'Sans Forgetica'; }
    60% { font-family: 'ZXX Noise'; }
-   100% { font-family: 'OpenDyslexic'; }
+   100% { font-family: 'helvetica'; }
  }
 
 /* .home a:link {
