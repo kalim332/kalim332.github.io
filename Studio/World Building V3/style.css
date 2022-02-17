@@ -94,6 +94,7 @@ h2{
 
 .home{
    display: grid;
+   /* grid-template-columns: repeat(2,1fr); */
 }
 
 .home h1{
@@ -105,7 +106,7 @@ h2{
    text-align: center;
    /* grid-column: 1/-1; */
    margin: 0rem;
-   padding: 6rem;
+   padding: 9rem;
 }
 
 /* .home :hover{
@@ -115,6 +116,7 @@ h2{
 
 .blink_me {
    animation: blinker 1s linear infinite;
+     /* grid-column: 1/-1; */
  }
  
  @keyframes blinker {  
@@ -226,7 +228,7 @@ a:hover {
 }
 
 
-.box1{
+.box1-1{
    background-color: rgb(255, 255, 255);
    color: rgb(0, 0, 0);
    font-family: 'Helvetica';
@@ -236,7 +238,7 @@ a:hover {
    margin: 0rem;
 }
 
-.box1 :hover {
+.box1-1 :hover {
    font-family:'OpenDyslexic';
    font-size: 11.95rem;
    background-color: rgb(255, 255, 255);
@@ -244,6 +246,50 @@ a:hover {
    margin-top: 4.5rem;
    margin-bottom: 4.5rem;
  }
+
+
+
+ .box1-2{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-family: 'Helvetica';
+   font-size: 6rem;
+   text-align: center;
+   grid-column: 1/-1;
+   margin: 0rem;
+}
+
+.box1-2 :hover {
+   font-family:'Sans Forgetica';
+   font-size: 10.8rem;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   margin-top: 9rem;
+   margin-bottom: 7.05rem;
+ }
+
+
+
+ .box1-3{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-family: 'Helvetica';
+   font-size: 6rem;
+   text-align: center;
+   grid-column: 1/-1;
+   margin: 0rem;
+}
+
+.box1-3 :hover {
+   font-family:'ZXX Noise';
+   font-size: 13rem;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   margin-top: 8rem;
+   margin-bottom: 6.3rem;
+ }
+
+
 
 
 .box2{
