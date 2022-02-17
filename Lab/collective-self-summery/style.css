@@ -6,6 +6,15 @@
    font-style: normal;
 }
 
+@font-face {
+   font-family:'Quicksand';
+   src: url('fonts/quicksand/Quicksand-Regular.woff2') format('woff2'),
+        url('fonts/quicksand/Quicksand-Regular.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
 
 html{
    background-color:  rgb(255, 255, 255);
@@ -74,28 +83,29 @@ h4:hover {
  }
 
 p{
-   font-family:'helvetica';
+   font-family:'Quicksand',sans-serif;
    background-color: rgb(200, 200, 200);
+   font-weight: bold;
    border-radius: .5rem;
    font-size: 20px;
-   line-height: 130%;
+   line-height: 140%;
    margin: .5rem;
    padding: .5rem;
 }
 
 ul{
-   font-family:'helvetica';
+   font-family: 'Trebuchet MS',sans-serif;
    font-size: 20px;
-   line-height: 130%;
+   line-height: 140%;
    text-align: left;
    margin-right: 2rem;
    margin-left: 1rem;
 }
 
 ol{
-   font-family:'helvetica';
+   font-family: 'Trebuchet MS',sans-serif;
    font-size: 20px;
-   line-height: 130%;
+   line-height: 140%;
    text-align: left;
    margin-right: 1rem;
    margin-left: 2rem;
