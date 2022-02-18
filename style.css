@@ -1,42 +1,118 @@
 html {
-    background: white;
+    background-color: #091540;
 }
 
-h1 {
-    color: rgb(155, 119, 174);
-    font-family: Helvetica;
-    font-size: 30px;
-    text-indent: 30px;
+body{
+    text-align: center;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+ }
 
-h2 {
+.title{
+    grid-column: 1/-1;
+    margin: 0.2em;
     color: rgb(208, 159, 233);
+    background-color: #233366;
     font-family: Helvetica;
-    font-size: 80px;
-    text-indent: 30px;
+    font-size: 5em;
 }
 
-h3 {
+.studioh{
+    grid-column: 1/4;
+    margin: 0.2em;
+    margin-bottom: 0em;
+    padding: 0em;
+    background-color: #3D518C;
+    color: #091540;
+    font-family: Helvetica;
+    font-size: 2em;
+}
+
+.labh{
+    grid-column: 4/-1;
+    margin: 0.2em;
+    margin-bottom: 0em;
+    padding: 0em;
+    background-color: #3D518C;
+    color: 3D518C;
+    font-family: Helvetica;
+    font-size: 2em;
+}
+
+.studio{
+    display: grid;
+    grid-column: 1/4;
+    margin: 0.2em;
+    margin-top: 0em;
+    padding: 1em;
+    font-family: Helvetica;
+    font-size: 2em;
+    background-color: #233366;
+    color: #3D518C;
+    justify-items: center;
+    align-items: center;
+}
+
+.lab1{
+    grid-column: 4/7;
+    margin: 0.2em;
+    margin-top: 0em;
+    margin-right: 0em;
+    padding: 1em;
+    font-family: Helvetica;
+    font-size: 2em;
+    color: #3D518C;
+    background-color: #233366;
+}
+
+.lab2{
+    grid-column: 7/-1;
+    margin: 0.2em;
+    margin-top: 0em;
+    margin-left: 0em;
+    font-family: Helvetica;
+    font-size: 2em;
+    color: #3D518C;
+    background-color: #233366;
+    padding: 1em;
+}
+
+
+
+.heading{
+    grid-column: 1/4;
+    margin: 0.5em;
+    padding-left: 1em;
     color: rgb(155, 119, 174);
     font-family: Helvetica;
-    font-size: 30px;
-    text-indent: 30px;
+    font-size: .5em;
+    text-align: left;
 }
+
+.date{
+    grid-column: 7/-1;
+    margin: 0.5em;
+    padding-right: 1em;
+    color: rgb(155, 119, 174);
+    font-family: Helvetica;
+    font-size: .5em;
+    text-align: right;
+}
+
+
 
 #link {
-    color: rgb(98, 74, 109);
     font-family: Helvetica;
     font-size: 20px;
-    text-indent: 30px;
     }
 
 a,a:link {
+    color: #475ea3;
     text-decoration: none;
-    color: rgb(98, 74, 109);
-    font-family: Helvetica;
     font-size: 20px;
-    text-indent: 30px;
 }
 
 a:hover {
