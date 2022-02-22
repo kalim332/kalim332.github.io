@@ -1,0 +1,507 @@
+@font-face {
+   font-family:'noto_sansbold';
+   src: url('fonts/notosans/notosans-bold-webfont.woff2') format('woff2'),
+        url('fonts/notosans/notosans-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family:'Quicksand';
+   src: url('fonts/quicksand/Quicksand-Regular.woff2') format('woff2'),
+        url('fonts/quicksand/Quicksand-Regular.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'OpenDyslexic';
+   src: url('fonts/dyslexia/OpenDyslexic-Regular.woff2') format('woff2'),
+       url('fonts/dyslexia/OpenDyslexic-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Sans Forgetica';
+   src: url('fonts/memorization/SansForgetica-Regular.woff2') format('woff2'),
+       url('fonts/memorization/SansForgetica-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'ZXX Noise';
+   src: url('fonts/Acessability/ZXX-Noise.woff2') format('woff2'),
+       url('fonts/Acessability/ZXX-Noise.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+
+
+html{
+   background-color:  rgb(255, 255, 255);
+}
+
+body{
+   margin: .5rem;
+   padding: .5rem;
+}
+
+
+h2{
+   font-family:'helvetica';
+   color: rgb(125, 125, 125);
+   /* background-color: rgb(255, 255, 255); */
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   text-align: center;
+   margin: .6rem;
+   padding: .6rem;
+}
+
+
+/* p{
+   font-family:'Quicksand',sans-serif;
+   background-color: rgb(200, 200, 200);
+   font-weight: bold;
+   border-radius: .5rem;
+   font-size: 20px;
+   line-height: 140%;
+   margin: .5rem;
+   padding: .5rem;
+} */
+
+.home{
+   display: grid;
+   /* grid-template-columns: repeat(2,1fr); */
+}
+
+.home h1{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   /* font-family: 'Helvetica'; */
+   font-size: 8rem;
+   /* letter-spacing: 8px; */
+   text-align: center;
+   /* grid-column: 1/-1; */
+   margin: 0rem;
+   padding: 9rem;
+}
+
+.home :link{
+   text-decoration: none;
+}
+
+.home :visited {
+   text-decoration: none;
+ }
+
+.home :hover{
+   text-decoration: none;
+}
+
+
+.blink_me {
+   animation: blinker 1s linear infinite;
+     /* grid-column: 1/-1; */
+ }
+ 
+ @keyframes blinker {  
+   0% { font-family: 'helvetica'; }
+   30% { font-family: 'Sans Forgetica'; }
+   60% { font-family: 'ZXX Noise'; }
+   100% { font-family: 'helvetica'; }
+ }
+
+
+
+
+ .collapsible {
+   background-color: #ffffff;
+   width: 100%;
+   border: none;
+   outline: none;
+   margin: .2rem;
+ }
+ 
+.collapsible :hover {
+   background-color: rgb(210, 210, 210);
+ }
+ 
+ .content {
+   display: grid;
+   overflow: hidden;
+   background-color: #f1f1f1;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   padding: 1rem;
+ }
+
+
+ 
+
+.container{
+   display: grid;
+   background-color: rgb(255, 255, 255);
+   grid-template-columns: repeat(12,1fr);
+}
+
+
+
+.nav1{
+   text-align: center;
+   margin: .6rem;
+   padding: .6rem;
+   grid-column: 1/7;
+}
+
+.nav1 h4{
+   font-family: 'helvetica';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .6rem;
+   padding: .6rem;
+}
+
+.nav1 :link{
+   text-decoration: none;
+}
+
+.nav1 :visited {
+   text-decoration: none;
+ }
+
+.nav1 :hover{
+   text-decoration: none;
+   background-color: rgb(210, 210, 210);
+}
+
+
+
+.nav2{
+   text-align: center;
+   margin: .5rem;
+   padding: 1rem;
+   grid-column: 7/9;
+}
+
+.nav2 h4{
+   font-family: 'OpenDyslexic';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .2rem;
+   padding: .2rem;
+}
+
+.nav2 :link{
+   text-decoration: none;
+}
+
+.nav2 :visited {
+   text-decoration: none;
+ }
+
+.nav2 :hover{
+   text-decoration: none;
+   background-color: rgb(210, 210, 210);
+}
+
+
+
+.nav3{
+   text-align: center;
+   margin: 0.1rem;
+   padding: 1.1rem;
+   grid-column: 9/11;
+}
+
+.nav3 h4{
+   font-family: 'Sans Forgetica';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .5rem;
+   padding: .5rem;
+}
+
+.nav3 :link{
+   text-decoration: none;
+}
+
+.nav3 :visited {
+   text-decoration: none;
+ }
+
+.nav3 :hover{
+   text-decoration: none;
+   background-color: rgb(210, 210, 210);
+}
+
+
+
+.nav4{
+   text-align: center;
+   margin: 0.1rem;
+   padding: 1.45rem;
+   grid-column: 11/-1;
+}
+
+.nav4 h4{
+   font-family: 'ZXX Noise';
+   color: rgb(125, 125, 125);
+   border-style: solid;
+   border-width: .2rem;
+   border-color: black;
+   font-size: 1.5rem;
+   margin: .2rem;
+   padding: .5rem;
+}
+
+.nav4 :link{
+   text-decoration: none;
+}
+
+.nav4 :visited {
+   text-decoration: none;
+ }
+
+.nav4 :hover{
+   text-decoration: none;
+   background-color: rgb(210, 210, 210);
+}
+
+ 
+
+
+
+
+.box1-1-1{
+   text-align: center;
+   grid-column: 1/-1;
+ }
+
+.box1-1-1 :link{
+   text-decoration: none;
+   font-family:'OpenDyslexic';
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-size: 6em;
+   /* margin-top: 3em; */
+}
+
+.box1-1-1 :visited {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+ }
+
+.box1-1-1 :hover{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-family: 'Helvetica';
+   /* font-size: 3.55em;
+   margin-bottom: .859em;
+   margin-top: .93em; */
+}
+
+
+
+.box1-1-2{
+   text-align: center;
+   grid-column: 1/-1;
+ }
+
+.box1-1-2 :link{
+   text-decoration: none;
+   font-family:'Helvetica';
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-size: 6em;
+   /* margin-bottom: .859em;
+   margin-top: 6em; */
+}
+
+.box1-1-2 :visited {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+ }
+
+.box1-1-2 :hover{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-family: 'OpenDyslexic';
+}
+
+
+
+
+
+
+
+
+
+
+.box1-2-1{
+   text-align: center;
+   grid-column: 1/-1;
+ }
+
+.box1-2-1 :link{
+   text-decoration: none;
+   font-family:'Sans Forgetica';
+   color: rgb(0, 0, 0);
+   font-size: 6rem;
+}
+
+.box1-2-1 :visited {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+ }
+
+.box1-2-1 :hover{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-family: 'Helvetica';
+}
+
+
+
+.box1-2-2{
+   text-align: center;
+   grid-column: 1/-1;
+ }
+
+.box1-2-2 :link{
+   text-decoration: none;
+   font-family:'Helvetica';
+   color: rgb(0, 0, 0);
+   font-size: 6rem;
+}
+
+.box1-2-2 :visited {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+ }
+
+.box1-2-2 :hover{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-family:'Sans Forgetica';
+}
+
+
+
+
+
+
+
+.box1-3-1{
+   text-align: center;
+   grid-column: 1/-1;
+ }
+
+.box1-3-1 :link{
+   text-decoration: none;
+   font-family:'Helvetica';
+   color: rgb(0, 0, 0);
+   font-size: 6rem;
+}
+
+.box1-3-1 :visited {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+ }
+
+.box1-3-1 :hover{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-family: 'ZXX Noise';
+}
+
+
+
+.box1-3-2{
+   text-align: center;
+   grid-column: 1/-1;
+ }
+
+.box1-3-2 :link{
+   text-decoration: none;
+   font-family:'ZXX Noise';
+   color: rgb(0, 0, 0);
+   font-size: 6rem;
+}
+
+.box1-3-2 :visited {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+ }
+
+.box1-3-2 :hover{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-family:'Helvetica';
+}
+
+
+
+
+
+.box2-1{
+   grid-column: 3/11;
+   /* margin: 0em; */
+   font-family:'OpenDyslexic';
+}
+
+.box2-1 h2{
+   font-family:'OpenDyslexic';
+}
+
+.box2-2{
+   grid-column: 3/11;
+   /* margin: 0em; */
+   font-family:'Sans Forgetica';
+}
+
+.box2-2 h2{
+   font-family:'Sans Forgetica';
+}
+
+.box2-3{
+   grid-column: 3/11;
+   /* margin: 0em; */
+   font-family:'ZXX Noise';
+}
+
+.box2-3 h2{
+   font-family:'ZXX Noise';
+}
+
+
+
+
+.box3{
+   grid-column: 3/11;
+   /* margin: 0em; */
+   font-family:'Helvetica';
+}
+
+.box3 h2{
+   font-family:'Helvetica';
+}
+
