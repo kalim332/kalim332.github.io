@@ -294,15 +294,14 @@ h2{
 .box1-1-1{
    text-align: center;
    grid-column: 1/-1;
+   /* background-color: blue; */
  }
 
 .box1-1-1 :link{
    text-decoration: none;
    font-family:'OpenDyslexic';
-   background-color: rgb(255, 255, 255);
    color: rgb(0, 0, 0);
    font-size: 6em;
-   /* margin-top: 3em; */
 }
 
 .box1-1-1 :visited {
@@ -314,9 +313,9 @@ h2{
    text-decoration: none;
    color: rgb(0, 0, 0);
    font-family: 'Helvetica';
-   /* font-size: 3.55em;
+   font-size: 3.55em;
    margin-bottom: .859em;
-   margin-top: .93em; */
+   margin-top: .93em;
 }
 
 
@@ -324,6 +323,7 @@ h2{
 .box1-1-2{
    text-align: center;
    grid-column: 1/-1;
+    /* background-color: blue; */
  }
 
 .box1-1-2 :link{
@@ -332,8 +332,6 @@ h2{
    background-color: rgb(255, 255, 255);
    color: rgb(0, 0, 0);
    font-size: 6em;
-   /* margin-bottom: .859em;
-   margin-top: 6em; */
 }
 
 .box1-1-2 :visited {
@@ -345,6 +343,9 @@ h2{
    text-decoration: none;
    color: rgb(0, 0, 0);
    font-family: 'OpenDyslexic';
+   font-size: 3.4em;
+   margin-top: .4em;
+   margin-bottom: .437em;
 }
 
 
@@ -365,7 +366,7 @@ h2{
    text-decoration: none;
    font-family:'Sans Forgetica';
    color: rgb(0, 0, 0);
-   font-size: 6rem;
+   font-size: 6em;
 }
 
 .box1-2-1 :visited {
@@ -377,6 +378,9 @@ h2{
    text-decoration: none;
    color: rgb(0, 0, 0);
    font-family: 'Helvetica';
+   font-size: 3.6em;
+   margin-top: .58em;
+   margin-bottom: .697em;
 }
 
 
@@ -402,6 +406,9 @@ h2{
    text-decoration: none;
    color: rgb(0, 0, 0);
    font-family:'Sans Forgetica';
+   font-size: 3.3em;
+   margin-top: .8em;
+   margin-bottom: .668em;
 }
 
 
@@ -419,7 +426,7 @@ h2{
    text-decoration: none;
    font-family:'Helvetica';
    color: rgb(0, 0, 0);
-   font-size: 6rem;
+   font-size: 6em;
 }
 
 .box1-3-1 :visited {
@@ -431,6 +438,9 @@ h2{
    text-decoration: none;
    color: rgb(0, 0, 0);
    font-family: 'ZXX Noise';
+   font-size: 3.6em;
+   margin-top: .6em;
+   margin-bottom: .508em;
 }
 
 
@@ -444,7 +454,7 @@ h2{
    text-decoration: none;
    font-family:'ZXX Noise';
    color: rgb(0, 0, 0);
-   font-size: 6rem;
+   font-size: 6.5em;
 }
 
 .box1-3-2 :visited {
@@ -456,6 +466,9 @@ h2{
    text-decoration: none;
    color: rgb(0, 0, 0);
    font-family:'Helvetica';
+   font-size: 3.5em;
+   margin-top: .71em;
+   margin-bottom: .833em;
 }
 
 
