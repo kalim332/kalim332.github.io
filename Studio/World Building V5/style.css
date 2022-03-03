@@ -45,49 +45,85 @@
 
 
 html{
-   background-color:  rgb(255, 255, 255);
+   background-color:  rgb(0, 0, 0);
 }
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows: 10em 25em 10em;
+}
+
+.top{
+   grid-column: 1/-1;
+   color: rgb(255, 255, 255);
+   font-family: 'noto_sansbold';
+   font-size: 3rem;
+   text-align: center;
+   margin: 0em;
+   padding: 1em;
+}
+
+.bottom{
+   grid-column: 1/-1;
+   color: rgb(255, 255, 255);
+   font-family: 'noto_sansbold';
+   font-size: 3rem;
+   text-align: center;
+   margin: 0em;
+   padding: 2em;
+}
+
 
 .home{
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
+   grid-column: 1/-1;
+   margin-bottom: -3em;
+   /* background-color: #b68fa7; */
+   
 }
+
+.home a:link{
+   text-decoration: none;
+}
+
+.home a:visited {
+   text-decoration: none;
+ }
+
+.home a:hover{
+   text-decoration: none;
+} 
 
 .home h1{
-   background-color: rgb(255, 255, 255);
-   color: rgb(0, 0, 0);
-   /* font-family: 'Helvetica'; */
-   font-size: 8rem;
-   /* letter-spacing: 8px; */
    text-align: center;
-   grid-column: 1/-1;
-   grid-row: 1/-1;
-   margin: 0rem;
-   padding: 9rem;
+   margin: 0em;
+   padding: 0.9em;
+   animation: 2s foo infinite step-end;
 }
 
-.home :link{
-   text-decoration: none;
+.home h1:hover{
+   animation-play-state: paused;
+   text-decoration: underline;
 }
 
-.home :visited {
-   text-decoration: none;
- }
-
-.home :hover{
-   text-decoration: none;
-}
-
-
-.blink_me {
-   animation: blinker 1s linear infinite;
-     /* grid-column: 1/-1; */
- }
- 
- @keyframes blinker {  
-   0% { font-family: 'helvetica'; }
-   30% { font-family: 'Sans Forgetica'; }
-   60% { font-family: 'ZXX Noise'; }
-   100% { font-family: 'helvetica'; }
+ @keyframes foo{  
+   0% { font-family: 'OpenDyslexic'; 
+      color: #9dedb3;
+      font-size: 8em;
+      line-height: 1.6em;}
+   30% { font-family: 'Sans Forgetica'; 
+      color: #dc5a22;
+      font-size: 8em; 
+      letter-spacing: 0em;
+      line-height: 1.8em;}
+   60% { font-family: 'ZXX Noise'; 
+      color: #eea1d0;
+      font-size: 8.5em; 
+      letter-spacing: 0em;
+      line-height: 1.5em;}
+   100% { font-family: 'OpenDyslexic'; 
+      color: #9dedb3;
+      font-size: 8em; 
+      line-height: 1.6em;}
  }
 

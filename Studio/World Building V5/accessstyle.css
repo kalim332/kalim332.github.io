@@ -121,12 +121,12 @@ html{
 
 .matters :link{
    text-decoration: none;
-   color: #eea1d0;
+   color: #1c1c1a10;
 }
 
 .matters :visited {
    text-decoration: none;
-   color: #eea1d0;
+   color: #1c1c1a10;
  }
 
 .matters :hover{
