@@ -201,4 +201,35 @@ html{
    font-size: 0.8em;
 }
 
-
+.content::-webkit-scrollbar {
+   width: 0.5em;
+ }
+ 
+ .content::-webkit-scrollbar-track {
+   background: #eea1d030;
+   border-radius: 0em;
+ }
+ 
+ .content::-webkit-scrollbar-thumb {
+   background: #1c1c1a;
+   border-radius: 0.5em;
+   border: solid;
+   border-width: 0.08em;
+   border-color: #eea1d030;
+ }
+ 
+ .content::-webkit-scrollbar-thumb:hover {
+   background: #1c1c1a;
+   border-radius: 0.5em;
+   border: solid;
+   border-width: 0.08em;
+   border-color: #1c1c1a10;
+ }
+ 
+ .content::-webkit-scrollbar-thumb:active {
+   background: #1c1c1a;
+   border-radius: 0.5em;
+   border: solid;
+   border-width: 0.08em;
+   border-color: #1c1c1a10;
+ }

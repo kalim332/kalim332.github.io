@@ -217,4 +217,35 @@ html{
    font-size: 0.8em;
 }
 
-
+.content::-webkit-scrollbar {
+   width: 0.5em;
+ }
+ 
+ .content::-webkit-scrollbar-track {
+   background: #231e6830;
+   border-radius: 0em;
+ }
+ 
+ .content::-webkit-scrollbar-thumb {
+   background: #9dedb3;
+   border-radius: 0.5em;
+   border: solid;
+   border-width: 0.08em;
+   border-color: #231e6830;
+ }
+ 
+ .content::-webkit-scrollbar-thumb:hover {
+   background: #9dedb3;
+   border-radius: 0.5em;
+   border: solid;
+   border-width: 0.08em;
+   border-color: #231e6810;
+ }
+ 
+ .content::-webkit-scrollbar-thumb:active {
+   background: #9dedb3;
+   border-radius: 0.5em;
+   border: solid;
+   border-width: 0.08em;
+   border-color: #231e6810;
+ }
