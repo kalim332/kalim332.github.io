@@ -1,0 +1,165 @@
+@font-face {
+   font-family:'noto_sansbold';
+   src: url('fonts/notosans/notosans-bold-webfont.woff2') format('woff2'),
+        url('fonts/notosans/notosans-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family:'Quicksand';
+   src: url('fonts/quicksand/Quicksand-Regular.woff2') format('woff2'),
+        url('fonts/quicksand/Quicksand-Regular.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'OpenDyslexic';
+   src: url('fonts/dyslexia/OpenDyslexic-Regular.woff2') format('woff2'),
+       url('fonts/dyslexia/OpenDyslexic-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Sans Forgetica';
+   src: url('fonts/memorization/SansForgetica-Regular.woff2') format('woff2'),
+       url('fonts/memorization/SansForgetica-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'ZXX Noise';
+   src: url('fonts/Acessability/ZXX-Noise.woff2') format('woff2'),
+       url('fonts/Acessability/ZXX-Noise.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+
+html{
+   background-color: #000000;
+}
+ 
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+   /* grid-template-rows: repeat(1,1fr); */
+}
+
+
+.hamburger{
+   grid-column: 11/-1;
+}
+
+.hamburger h1{
+   font-size: 8em;
+   text-align: center;
+   color: #ffffff;
+   line-height: 20%;
+   margin: 0.28em;
+   padding: 0em;
+   transform: rotate(90deg);
+   transition: .5s ease-in-out;
+   transform-origin: 50% 65%;
+}
+
+.hamburger :link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hamburger :visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hamburger :hover{
+  text-decoration: none;
+  color: #ffffff;
+  transform: rotate(-0deg);
+}
+
+
+
+.menu {
+  grid-column: 3/11;
+  text-align: center;
+  padding-top: 10em;
+}
+
+
+
+.D :link{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'OpenDyslexic';
+  font-size: 3.5em;
+}
+
+.D :visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'OpenDyslexic';
+  font-size: 3.5em;
+}
+
+.D :hover{
+  text-decoration: none;
+  color: #9dedb3;
+  font-family: 'OpenDyslexic';
+  font-size: 3.5em;
+}
+
+
+
+.M :link{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Sans Forgetica';
+  font-size: 3.5em;
+}
+
+.M :visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Sans Forgetica';
+  font-size: 3.5em;
+}
+
+.M :hover{
+  text-decoration: none;
+  color: #dc5a22;
+  font-family: 'Sans Forgetica';
+  font-size: 3.5em;
+}
+
+
+
+.A :link{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'ZXX Noise';
+  font-size: 4em;
+}
+
+.A :visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'ZXX Noise';
+  font-size: 4em;
+}
+
+.A :hover{
+  text-decoration: none;
+  color: #eea1d0;
+  font-family: 'ZXX Noise';
+  font-size: 4em;
+}
