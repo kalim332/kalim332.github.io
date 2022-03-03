@@ -218,8 +218,6 @@ html{
  .memory span:nth-child(13) {
    animation: fade-in 1.8s 1s backwards cubic-bezier(0.11, 0, 0.5, 1)infinite;
  }
-
-
  
  .memory span:nth-child(14) {
    animation: fade-in 1.8s 1.2s backwards cubic-bezier(0.11, 0, 0.5, 0)infinite;

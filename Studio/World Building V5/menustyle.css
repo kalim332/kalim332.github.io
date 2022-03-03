@@ -67,7 +67,26 @@ html{
    margin: 0.28em;
    padding: 0em;
    transform: rotate(90deg);
+   transition: .5s ease-in-out;
+   transform-origin: 50% 65%;
 }
+
+.hamburger :link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hamburger :visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hamburger :hover{
+  text-decoration: none;
+  color: #ffffff;
+  transform: rotate(-0deg);
+}
+
 
 
 .menu {
