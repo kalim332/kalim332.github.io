@@ -1,0 +1,277 @@
+html{
+  background-color: #001BD6;
+}
+
+
+.container{
+  display: grid;
+  background-color: #001BD6;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 3em auto 3em;
+}
+
+
+.oval1 {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 43em;
+  width: 25em;
+  background-color: #004DFF;
+  border-radius: 50%;
+  margin-top: 2em;
+  z-index: 1;
+  animation: flicker 2s infinite alternate;
+}
+
+.oval2 {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35em;
+  width: 19em;
+  background-color: #3E66FF;
+  border-radius: 50%;
+  margin-top: 4.2em;
+  z-index: 2;
+  animation: flicker 2s infinite alternate;
+}
+
+.oval3 {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  width: 15em;
+  background-color: #4F6FFE;
+  border-radius: 50%;
+  margin-top: 5.3em;
+  z-index: 3;
+  animation: flicker 2s infinite alternate;
+}
+
+.oval4 {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25em;
+  width: 12em;
+  background-color: #5974FF;
+  border-radius: 50%;
+  margin-top: 6.3em;
+  z-index: 4;
+  animation: flicker 2s infinite alternate;
+}
+
+.oval5 {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 21em;
+  width: 10em;
+  background-color: #5F78FF;
+  border-radius: 50%;
+  margin-top: 7em;
+  z-index: 5;
+  animation: flicker 2s infinite alternate;
+}
+
+.oval6 {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 17em;
+  width: 8em;
+  background-color: #6a80fd;
+  border-radius: 50%;
+  margin-top: 7.5em;
+  z-index: 6;
+  animation: flicker 2s infinite alternate;
+}
+
+a:link{
+  text-decoration: none;
+  box-shadow: none;
+}
+
+a:visited {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+a:hover{
+  text-decoration: none;
+  box-shadow: none;
+}
+
+
+@keyframes flicker {
+    
+  0%, 100% {
+
+    box-shadow: 
+    inset 0 0 0.2em 0.01em #ffffff6d, 
+    inset 0 0 0.5em 0.5em #ffffff15, 
+    inset 0 0 0em 0em #ffffff; 
+  
+  }
+  
+   50% {        
+      box-shadow: none;
+  }    
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  html{
+    background-color: #63346A;
+  }
+  
+  
+  .container{
+    display: grid;
+    background-color: #63346A;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 5em auto 5em;
+  }
+  
+  
+  .oval1 {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40em;
+    width: 70em;
+    background-color: #A058A7;
+    border-radius: 50%;
+    margin-top: 0em;
+    z-index: 1;
+    animation: none;
+  }
+  
+  .oval2 {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30em;
+    width: 55em;
+    background-color: #CC8BC8;
+    border-radius: 50%;
+    margin-top: 4em;
+    z-index: 2;
+    animation: none;
+  }
+  
+  .oval3 {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25em;
+    width: 45em;
+    background-color: #D7A0CE;
+    border-radius: 50%;
+    margin-top: 5.5em;
+    z-index: 3;
+    animation: none;
+  }
+  
+  .oval4 {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 22em;
+    width: 38em;
+    background-color: #DFA6D0;
+    border-radius: 50%;
+    margin-top: 7em;
+    z-index: 4;
+    animation: none;
+  }
+  
+  .oval5 {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 19em;
+    width: 33em;
+    background-color: #DCACD3;
+    border-radius: 50%;
+    margin-top: 8.5em;
+    z-index: 5;
+    animation: none;
+  }
+  
+  .oval6 {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15em;
+    width: 28.5em;
+    background-color: #e4b7dc;
+    border-radius: 50%;
+    margin-top: 9.5em;
+    z-index: 6;
+    animation: none;
+  }
+
+  a:link{
+    text-decoration: none;
+    box-shadow: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    box-shadow:  inset 0 0 1em 0.1em #ffffff6d, 
+    inset 0 0 1em 1em #ffffff15, 
+    inset 0 0 0em 0em #ffffff; 
+  }
+  
+  a:hover{
+    text-decoration: none;
+    box-shadow:  inset 0 0 1em 0.1em #ffffff6d, 
+    inset 0 0 1em 1em #ffffff15, 
+    inset 0 0 0em 0em #ffffff; 
+  }
+
+
+  @keyframes flicker {
+    
+    0%, 100% {
+  
+      box-shadow: none;
+    
+    }
+    
+     50% {        
+        box-shadow: none;
+    }    
+}
+}

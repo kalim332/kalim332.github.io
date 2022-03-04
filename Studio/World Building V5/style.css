@@ -58,20 +58,20 @@ html{
    grid-column: 1/-1;
    color: rgb(255, 255, 255);
    font-family: 'noto_sansbold';
-   font-size: 3rem;
+   font-size: 1.5em;
    text-align: center;
    margin: 0em;
-   padding: 1em;
+   padding: 4em;
 }
 
 .bottom{
    grid-column: 1/-1;
    color: rgb(255, 255, 255);
    font-family: 'noto_sansbold';
-   font-size: 3rem;
+   font-size: 1.5em;
    text-align: center;
    margin: 0em;
-   padding: 2em;
+   padding: 3em;
 }
 
 
@@ -115,7 +115,8 @@ html{
       color: #dc5a22;
       font-size: 8em; 
       letter-spacing: 0em;
-      line-height: 1.8em;}
+      line-height: 1.8em;
+      src: url('access.html');}
    60% { font-family: 'ZXX Noise'; 
       color: #eea1d0;
       font-size: 8.5em; 

@@ -101,21 +101,21 @@ html{
   text-decoration: none;
   color: #ffffff;
   font-family: 'OpenDyslexic';
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .D :visited {
   text-decoration: none;
   color: #ffffff;
   font-family: 'OpenDyslexic';
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .D :hover{
   text-decoration: none;
   color: #9dedb3;
   font-family: 'OpenDyslexic';
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 
@@ -124,21 +124,21 @@ html{
   text-decoration: none;
   color: #ffffff;
   font-family: 'Sans Forgetica';
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .M :visited {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Sans Forgetica';
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .M :hover{
   text-decoration: none;
   color: #dc5a22;
   font-family: 'Sans Forgetica';
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 
@@ -147,19 +147,19 @@ html{
   text-decoration: none;
   color: #ffffff;
   font-family: 'ZXX Noise';
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .A :visited {
   text-decoration: none;
   color: #ffffff;
   font-family: 'ZXX Noise';
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .A :hover{
   text-decoration: none;
   color: #eea1d0;
   font-family: 'ZXX Noise';
-  font-size: 4em;
+  font-size: 3.5em;
 }
