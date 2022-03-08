@@ -117,7 +117,7 @@ html{
    line-height: 250%;
    margin: .6em;
    padding: 0em;
-   /* background-color: aqua; */
+   /* background-color: #ca521e; */
 }
 
 .matters :link{
@@ -150,14 +150,14 @@ html{
    padding: 1.2em;
 }
 
-.memory span {
+/* .memory span {
    filter: blur(4px);
    animation-play-state: paused;
    animation-delay: calc(var(--scroll) * -1s);
  
    animation-iteration-count: 1;
    animation-fill-mode: both;
- }
+ } */
  
  .memory span:nth-child(1) {
    animation: fade-in 1.8s 1s backwards cubic-bezier(0.11, 0, 0.5, 1)infinite;
@@ -188,8 +188,6 @@ html{
  .memory span:nth-child(6) {
    animation: fade-in 1.8s 2s backwards cubic-bezier(0.11, 0, 0.5, 0)infinite;
  }
-
-
 
  .memory span:nth-child(7) {
    animation: fade-in 1.3s 1s backwards cubic-bezier(0.11, 0, 0.5, 1)infinite;
@@ -381,7 +379,7 @@ html{
    grid-column: 7/-1;
    font-family: 'Sans Forgetica';
    color: #0b143b;
-   /* background-color: rgb(174, 174, 197); */
+   /* background-color: #ca521e; */
    border-style: solid;
    border-color: #0b143b;
    border-width: 0.2em;
