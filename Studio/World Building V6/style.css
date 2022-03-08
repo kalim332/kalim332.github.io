@@ -212,6 +212,7 @@ html{
  @keyframes foo1{  
    0% { font-family: 'OpenDyslexic'; 
       color: #9dedb3;
+      background-color: #000000;
       font-size: 8em;
       line-height: 1.6em;}
    30% { font-family: 'Sans Forgetica'; 
