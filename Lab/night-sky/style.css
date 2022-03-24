@@ -60,75 +60,88 @@ body{
 
 
 .shoot{
-position: relative;
-left:0%;
-top:0em;
-width: .02em;
-height: .02em;
-background-color:#000000;
-position:fixed;
-animation: diagonal-move-anim1 5s linear infinite;
-animation-play-state: running;
-}
-
-.shoot::before{
-position: relative;
-display:block;
-content:"";
-width:15em;
-right:0em;
-top:-10em;
-height:0.1em;
-transform: rotate(45deg);
-background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
-} 
-
-@keyframes diagonal-move-anim1 {
-
-0% {
-   transform: translate(0, 0);
-}
-
-100% {
-   transform: translate(150em, 150em);
-}
-}
-
-
-
-.p-2{
-position: relative;
-left:0em;
-top:60%;
-width: .02em;
-height: .02em;
-background-color:white;
-position:fixed;
-animation:particleAnimation .5s linear reverse; 
-animation-delay: 2s;
-}
-.p-2::before{
-position:absolute;
-display:block;
-content:"";
-width:15em;
-right:1em;
-top:0em;
-height:0.1em;
-transform: rotate(-180deg);
-background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
-}
-
-
-@keyframes particleAnimation
-{
-  from {
-      left: 0%;
+   position: relative;
+   left:0%;
+   top:0em;
+   width: .02em;
+   height: .02em;
+   background-color:#000000;
+   position:fixed;
+   animation: diagonal-move-anim1 5s linear infinite;
+   animation-play-state: running;
+ }
+ 
+ .shoot::before{
+    position: relative;
+    display:block;
+    content:"";
+    width:15em;
+    right:0em;
+    top:-10em;
+    height:0.1em;
+    transform: rotate(45deg);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+    } 
+ 
+ @keyframes diagonal-move-anim1 {
+ 
+    0% {
+       transform: translate(0, 0);
+    }
+    
+    60% {
+       transform: translate(0, 0);
+    }
+ 
+    100% {
+       transform: translate(150em, 150em);
+    }
+ }
+ 
+ 
+ 
+ .shoot2{
+    position: relative;
+    left:0%;
+    top:0em;
+    width: .02em;
+    height: .02em;
+    background-color:#000000;
+    position:fixed;
+    animation: particleAnimation 3s linear reverse infinite;
+    animation-play-state: running;
   }
-  to {
-      left: calc( 100% + 10em );
-  }
-}
+  
+  .shoot2::before{
+     position: relative;
+     display:block;
+     content:"";
+     width:25em;
+     right:5em;
+     top:5em;
+     height:0.1em;
+     transform: rotate(-45deg);
+     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+     } 
+ 
+ 
+  @keyframes particleAnimation
+  {
+    0% {
+       transform: translate(80em, -10em);
+    }
+ 
+    80% {
+    transform: translate(80em, -10em);
+ }
+ 
+ 100% {
+    transform: translate(0em, 80em);
+ }
+ }
+
+ 
+ 
 
 
 
@@ -198,77 +211,89 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
 
    
 
-.shoot{
-  position: relative;
-  left:0%;
-  top:0em;
-  width: .02em;
-  height: .02em;
-  background-color:#000000;
-  position:fixed;
-  animation: diagonal-move-anim1 5s linear infinite;
-  animation-play-state: running;
-}
-
-.shoot::before{
-   position: relative;
-   display:block;
-   content:"";
-   width:15em;
-   right:0em;
-   top:-10em;
-   height:0.1em;
-   transform: rotate(45deg);
-   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
-   } 
-
-@keyframes diagonal-move-anim1 {
-
-	0% {
-		transform: translate(0, 0);
-	}
-
-	100% {
-		transform: translate(150em, 150em);
-	}
-}
-
-
-
-.p-2{
-   position: relative;
-   left:0em;
-   top:60%;
-   width: .02em;
-   height: .02em;
-   background-color:white;
-   position:fixed;
-   animation:particleAnimation .5s linear reverse; 
-   animation-delay: 2s;
- }
- .p-2::before{
-   position:absolute;
-   display:block;
-   content:"";
-   width:15em;
-   right:1em;
-   top:0em;
-   height:0.1em;
-   transform: rotate(-180deg);
-   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
- }
-
-
- @keyframes particleAnimation
- {
-     from {
-         left: 0%;
+   .shoot{
+      position: relative;
+      left:0%;
+      top:0em;
+      width: .02em;
+      height: .02em;
+      background-color:#000000;
+      position:fixed;
+      animation: diagonal-move-anim1 5s linear infinite;
+      animation-play-state: running;
+    }
+    
+    .shoot::before{
+       position: relative;
+       display:block;
+       content:"";
+       width:15em;
+       right:0em;
+       top:-10em;
+       height:0.1em;
+       transform: rotate(45deg);
+       background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+       } 
+    
+    @keyframes diagonal-move-anim1 {
+    
+       0% {
+          transform: translate(0, 0);
+       }
+       
+       60% {
+          transform: translate(0, 0);
+       }
+    
+       100% {
+          transform: translate(150em, 150em);
+       }
+    }
+    
+    
+    
+    .shoot2{
+       position: relative;
+       left:0%;
+       top:0em;
+       width: .02em;
+       height: .02em;
+       background-color:#000000;
+       position:fixed;
+       animation: particleAnimation 3s linear reverse infinite;
+       animation-play-state: running;
      }
-     to {
-         left: calc( 100% + 10em );
-     }
- }
-}
+     
+     .shoot2::before{
+        position: relative;
+        display:block;
+        content:"";
+        width:25em;
+        right:5em;
+        top:5em;
+        height:0.1em;
+        transform: rotate(-45deg);
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+        } 
+    
+    
+     @keyframes particleAnimation
+     {
+       0% {
+          transform: translate(80em, -10em);
+       }
+    
+       80% {
+       transform: translate(80em, -10em);
+    }
+    
+    100% {
+       transform: translate(0em, 80em);
+    }
+    }
+   }
+    
+    
 
 
 
@@ -339,77 +364,89 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
 
    
 
-.shoot{
-  position: relative;
-  left:0%;
-  top:0em;
-  width: .02em;
-  height: .02em;
-  background-color:#000000;
-  position:fixed;
-  animation: diagonal-move-anim1 5s linear infinite;
-  animation-play-state: running;
-}
-
-.shoot::before{
-   position: relative;
-   display:block;
-   content:"";
-   width:15em;
-   right:0em;
-   top:-10em;
-   height:0.1em;
-   transform: rotate(45deg);
-   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
-   } 
-
-@keyframes diagonal-move-anim1 {
-
-	0% {
-		transform: translate(0, 0);
-	}
-
-	100% {
-		transform: translate(150em, 150em);
-	}
-}
-
-
-
-.p-2{
-   position: relative;
-   left:0em;
-   top:60%;
-   width: .02em;
-   height: .02em;
-   background-color:white;
-   position:fixed;
-   animation:particleAnimation .5s linear reverse; 
-   animation-delay: 2s;
- }
- .p-2::before{
-   position:absolute;
-   display:block;
-   content:"";
-   width:15em;
-   right:1em;
-   top:0em;
-   height:0.1em;
-   transform: rotate(-180deg);
-   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
- }
-
-
- @keyframes particleAnimation
- {
-     from {
-         left: 0%;
+   .shoot{
+      position: relative;
+      left:0%;
+      top:0em;
+      width: .02em;
+      height: .02em;
+      background-color:#000000;
+      position:fixed;
+      animation: diagonal-move-anim1 5s linear infinite;
+      animation-play-state: running;
+    }
+    
+    .shoot::before{
+       position: relative;
+       display:block;
+       content:"";
+       width:15em;
+       right:0em;
+       top:-10em;
+       height:0.1em;
+       transform: rotate(45deg);
+       background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+       } 
+    
+    @keyframes diagonal-move-anim1 {
+    
+       0% {
+          transform: translate(0, 0);
+       }
+       
+       60% {
+          transform: translate(0, 0);
+       }
+    
+       100% {
+          transform: translate(150em, 150em);
+       }
+    }
+    
+    
+    
+    .shoot2{
+       position: relative;
+       left:0%;
+       top:0em;
+       width: .02em;
+       height: .02em;
+       background-color:#000000;
+       position:fixed;
+       animation: particleAnimation 4s linear reverse infinite;
+       animation-play-state: running;
      }
-     to {
-         left: calc( 100% + 10em );
-     }
- }
-}
+     
+     .shoot2::before{
+        position: relative;
+        display:block;
+        content:"";
+        width:25em;
+        right:5em;
+        top:5em;
+        height:0.1em;
+        transform: rotate(-40deg);
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+        } 
+    
+    
+     @keyframes particleAnimation
+     {
+       0% {
+          transform: translate(120em, -10em);
+       }
+    
+       90% {
+       transform: translate(120em, -10em);
+    }
+    
+    100% {
+       transform: translate(0em, 100em);
+    }
+    }
+    }
+    
+    
 
 
 
