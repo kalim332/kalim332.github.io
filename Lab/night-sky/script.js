@@ -1,8 +1,10 @@
 let stars = document.querySelectorAll('.star');
 let container = document.querySelector('#container');
 let moon = document.querySelector('#moon');
+
 // let shoot = document.querySelector('.shoot');
 // let shootbefore = document.querySelector('.shoot::before');
+
 
 var anim = document.querySelectorAll('.shoot');
 
