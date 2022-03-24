@@ -46,8 +46,11 @@ body{
 }
 
 #text {
+   position: absolute;
    text-align: center;
    margin-top: 0%;
+   bottom: 5%;
+   right: 50%;
    font-family: 'Raleway Dots', cursive;
    font-size: 4em;
    color: #ffffff;
@@ -64,8 +67,8 @@ width: .02em;
 height: .02em;
 background-color:#000000;
 position:fixed;
-animation: diagonal-move-anim1 2s linear infinite;
-animation-play-state: paused;
+animation: diagonal-move-anim1 5s linear infinite;
+animation-play-state: running;
 }
 
 .shoot::before{
@@ -182,10 +185,13 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
    }
 
    #text {
+      position: absolute;
       text-align: center;
       margin-top: 0%;
+      bottom: 5%;
+      right: 50%;
       font-family: 'Raleway Dots', cursive;
-      font-size: 6em;
+      font-size: 5em;
       color: #ffffff;
       padding: 0em;
    }
@@ -200,8 +206,8 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
   height: .02em;
   background-color:#000000;
   position:fixed;
-  animation: diagonal-move-anim1 2s linear infinite;
-  animation-play-state: paused;
+  animation: diagonal-move-anim1 5s linear infinite;
+  animation-play-state: running;
 }
 
 .shoot::before{
@@ -320,10 +326,13 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
    }
 
    #text {
+      position: absolute;
       text-align: center;
       margin-top: 0%;
+      bottom: 5%;
+      right: 50%;
       font-family: 'Raleway Dots', cursive;
-      font-size: 9em;
+      font-size: 7em;
       color: #ffffff;
       padding: 0em;
    }
@@ -338,8 +347,8 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
   height: .02em;
   background-color:#000000;
   position:fixed;
-  animation: diagonal-move-anim1 2s linear infinite;
-  animation-play-state: paused;
+  animation: diagonal-move-anim1 5s linear infinite;
+  animation-play-state: running;
 }
 
 .shoot::before{
@@ -459,10 +468,13 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
 
 
     #text {
+      position: absolute;
       text-align: center;
       margin-top: 0%;
+      bottom: 5%;
+      right: 50%;
       font-family: 'Raleway Dots', cursive;
-      font-size: 12em;
+      font-size: 9em;
       color: #ffffff;
       padding: 0em;
    }
@@ -477,8 +489,8 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
   height: .02em;
   background-color:#000000;
   position:fixed;
-  animation: diagonal-move-anim1 2s linear infinite;
-  animation-play-state: paused;
+  animation: diagonal-move-anim1 5s linear infinite;
+  animation-play-state: running;
 }
 
 .shoot::before{
@@ -498,6 +510,10 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
 	0% {
 		transform: translate(0, 0);
 	}
+   
+   60% {
+		transform: translate(0, 0);
+	}
 
 	100% {
 		transform: translate(150em, 150em);
@@ -506,38 +522,44 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100
 
 
 
-.p-2{
+.shoot2{
    position: relative;
-   left:0em;
-   top:60%;
+   left:0%;
+   top:0em;
    width: .02em;
    height: .02em;
-   background-color:white;
+   background-color:#000000;
    position:fixed;
-   animation:particleAnimation .5s linear reverse; 
-   animation-delay: 2s;
+   animation: particleAnimation 4s linear reverse infinite;
+   animation-play-state: running;
  }
- .p-2::before{
-   position:absolute;
-   display:block;
-   content:"";
-   width:15em;
-   right:1em;
-   top:0em;
-   height:0.1em;
-   transform: rotate(-180deg);
-   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
- }
+ 
+ .shoot2::before{
+    position: relative;
+    display:block;
+    content:"";
+    width:25em;
+    right:5em;
+    top:5em;
+    height:0.1em;
+    transform: rotate(-40deg);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+    } 
 
 
  @keyframes particleAnimation
  {
-     from {
-         left: 0%;
-     }
-     to {
-         left: calc( 100% + 10em );
-     }
- }
+   0% {
+      transform: translate(120em, -10em);
+   }
+
+   90% {
+   transform: translate(120em, -10em);
+}
+
+100% {
+   transform: translate(0em, 100em);
+}
+}
 }
 

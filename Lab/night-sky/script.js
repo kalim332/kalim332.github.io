@@ -8,6 +8,8 @@ let moon = document.querySelector('#moon');
 
 var anim = document.querySelectorAll('.shoot');
 
+var anim2 = document.querySelectorAll('.shoot2');
+
 for (let i = 0; i < 800; i++) {
   let star = document.createElement('div');
   star.classList.add('star');
@@ -37,5 +39,11 @@ for (let i = 0; i < 800; i++) {
         else {
             anim[i].style.animationPlayState = 'paused';
         }
-    }
+        if (anim2[i].style.animationPlayState == 'paused') {
+            anim2[i].style.animationPlayState = 'running';
+        }
+        else {
+            anim2[i].style.animationPlayState = 'paused';
+        }
+      }
 }
