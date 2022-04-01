@@ -9,4 +9,6 @@ h1{
   font-family: 'Modak', cursive;
   font-size: 10em;
   letter-spacing: .08em;
+  font-weight: lighter;
+  text-align: center;
 }
