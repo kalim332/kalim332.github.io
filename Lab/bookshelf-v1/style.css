@@ -11,4 +11,16 @@ h1{
   letter-spacing: .08em;
   font-weight: lighter;
   text-align: center;
+  margin-bottom: 0.4em;
+}
+
+h2{
+  color:#c8c1f3;
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  letter-spacing: .08em;
+  line-height: 100%;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 5em;
 }

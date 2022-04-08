@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+html{
+  background-color: #092b3b;
+}
+
+h1{
+  color:#c8c1f3;
+  font-family: 'Modak', cursive;
+  font-size: 10em;
+  letter-spacing: .08em;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0em;
+}
+
+h2{
+  color:#c8c1f3;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.3em;
+  letter-spacing: .08em;
+  line-height: 100%;
+  font-weight:bold;
+  text-align: center;
+  /* margin-left: 5em; */
+}
+
+h3{
+  color:white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .08em;
+  line-height: 100%;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 3em;
+  border: dotted .13em white;
+  border-radius: 3em;
+  padding: 1em;
+}
+
+p{
+  color:white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em;
+  letter-spacing: .08em;
+  line-height: 120%;
+  font-weight: lighter;
+  text-align: left;
+  /* margin-left: 5em; */
+}
+
+a{
+  color:#7EA1C4;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .08em;
+  line-height: 100%;
+  font-weight: bold;
+  justify-items: center;
+  /* text-align: left;
+  margin-left: 5em; */
+}
+
+
+/* add this to hide our placeholder  */
+.hidden {
+  display: none !important;
+}
+
+
+/* what do you want your shelf to look like? HINT: play with line 27 if you don't want to see that line later - it's helpful for now, as we can see our shelf*/
+.shelf {
+  background-color: #082330;
+  border: 2em solid #061b24; 
+  border-radius: .5em;
+  /* margin-bottom: 2em; */
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  margin-bottom: 4em;
+  padding: 0em;
+  padding-top: 4em;
+  align-items: center;
+  justify-content: center;
+}
+
+/* styling the books on the shelf- play with lines 38-42 or delete them and comment in lines 43-47 if you want thin spines of books */
+.shelf .book-spine {
+  /* background: aliceblue; */
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  color: #7EA1C4;
+  /* width: 5em; */
+  margin-right: .7em;
+  margin-left: .7em; 
+  height: 22em;
+  border: 0.5em solid #7EA1C4; 
+  border-radius: 0.4em;
+  text-align: center;
+  justify-content: center;
+  width: fit-content; 
+  padding: 1.5em; 
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.shelf .book-spine.active {
+  background: #7EA1C4;
+  border: 0.5em solid #7EA1C4; 
+  color: #092b3b;
+}
+
+.shelf .book-spine:hover {
+  background: #7ea1c49a;
+  /* border: 0.5em solid #7EA1C4;  */
+  color: #092b3b;
+}
+
+.book-detail {
+  display: grid;
+  /* grid-column: 1/-1; */
+  grid-template-columns: repeat(5,1fr);
+  /* align-items: center;
+  justify-content: center; */
+  /* margin: 3em; */
+}
+
+.book-detail .figure {
+  /* width: 100%; */
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex: none; */
+  margin-bottom: 0em;
+}
+
+.book-detail .cover-image {
+  /* margin: 1em; */
+  /* align-items: center; */
+  /* box-sizing: border-box; */
+  /* display: grid; */
+    width: 65%;
+    height: auto;
+  /* object-fit: cover; */
+  /* grid-column: 2/5;
+  grid-row: 1/1;
+  position: relative;
+  margin-left: 0%;
+  margin-right: auto; */
+  /* position:relative;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.book-detail .info {
+  display: grid;
+  grid-column: 3/-1;
+  grid-row: 1/1;
+  margin-bottom: 2em;
+  /* position: relative;
+  margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+  background-color:#082330 ;
+  padding: 4em;
+}
+
+.book-detail .title {
+  text-transform: uppercase;
+  grid-column: 1/-1;
+  padding-bottom: 1em;
+  display: grid;
+  position: relative;
+  margin: 0em;
+}
+
+.book-detail .description {
+text-align: left;
+  /* line-height: 1.5; */
+}
+
+.book-detail .more {
+  margin: 1em;
+  text-align: center;
+  /* line-height: 1.5; */
+}
+
+/* make it responsive */
+@media (max-width: 1200px) {
+  h1{
+    color:#c8c1f3;
+    font-family: 'Modak', cursive;
+    font-size: 7em;
+    letter-spacing: .08em;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0em;
+  }
+  
+  .shelf {
+    /* border-bottom: 10px solid black; 
+    margin-bottom: 2em;  */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .shelf .book-spine {
+    /* background: aliceblue; */
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    color: #7EA1C4;
+    /* width: 5em; */
+    margin-bottom: 4em;
+    margin-right: .5em;
+    margin-left: .5em; 
+    height: 15em;
+    border: 0.5em solid #7EA1C4; 
+    border-radius: 0.4em;
+    text-align: center;
+    justify-content: center;
+    width: fit-content; 
+    padding: 2em; 
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .book-detail {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items:center;
+    width: 100%;
+    margin: auto;
+    /* margin-bottom: 2em; */
+  }
+
+    .book-detail .figure {
+      /* width: 100%; */
+      grid-column: 1/-1;
+      grid-row: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* flex: none; */
+      margin-bottom: 0em;
+    }
+  
+  .book-detail .cover-image {
+    /* margin: 1em; */
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+    /* display: grid; */
+    width: 40%;
+    height: auto;
+    /* margin: 2em; */
+    /* object-fit: cover; */
+    /* grid-column: 2/5;
+    grid-row: 1/1;
+    position: relative;
+    margin-left: 0%;
+    margin-right: auto; */
+    /* position:relative;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .book-detail .info {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 2/-2;
+    margin-bottom: 2em;
+    /* position: relative;
+    margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+    background-color:#082330 ;
+    padding: 4em;
+  }
+  
+  .book-detail .title {
+    text-transform: uppercase;
+    grid-column: 1/-1;
+    padding-bottom: 1em;
+    display: grid;
+    position: relative;
+    margin: 0em;
+  }
+  
+  .book-detail .description {
+  text-align: left;
+    /* line-height: 1.5; */
+  }
+  
+  .book-detail .more {
+    margin: 1em;
+    text-align: center;
+    /* line-height: 1.5; */
+  }
+
+}
