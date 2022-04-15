@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+   <link rel="stylesheet" href="style.css">
+
+
+
+    
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+    Bookshelf
+    </h1>
+
+    <h3>
+      Use the filters to specify a genre<br>
+      Select a book and scroll down for more infomation
+    </h3>
+
+
+      <h2 class="filter-pill" id="all-filter">All</h2>
+      <h2 class="filter-pill" id="photography-filter">Photography</h2>
+      <h2 class="filter-pill" id="artist-filter">Artist</h2>
+      <h2 class="filter-pill" id="intersectionality-filter">Instersectionality</h2>
+      <h2 class="filter-pill" id="culture-filter">Culture</h2>
+      <h2 class="filter-pill" id="conflict-filter">Conflict</h2>
+      <h2 class="filter-pill" id="typography-filter">Typography</h2>
+      <h2 class="filter-pill" id="illustration-filter">Illustration</h2>
+      <h2 class="filter-pill" id="humor-filter">Humor</h2>
+
+
+  </div>
+
+    <nav id="shelf" class="shelf"></nav>
+
+    <article id="book-detail" class="book-detail hidden">
+  
+    <section class="figure">
+      <img class="cover-image" src="https://www.cs.princeton.edu/~bwk/tpop.webpage/tpop.jpg" alt="Book Cover"/>
+    </section>
+
+    <section class="info">
+      <h2 class="title">The Practice of Programming</h2>
+      <p class="description">The wiener dog book! Rather than focusing on a specific language or library, this book pulls back and looks at the big big picture of programming.</p>
+      <a class="more" href="https://www.cs.princeton.edu/~bwk/tpop.webpage/">Read More</a>
+    </section>
+      
+    </article> 
+
+    <script src="airtable.browser.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
