@@ -169,19 +169,6 @@ a{
   border: 0.2em solid #7EA1C4;
 }
 
-#typography-filter {
-  background-color:  #7EA1C4;
-  color: #092b3b;
-  border: 0.2em solid #7EA1C4;
-  margin: 1em;
-  padding: 0.5em;
-}
-
-#typography-filter:hover  {
-  background-color:  #092b3b;
-  color: #7EA1C4;
-  border: 0.2em solid #7EA1C4;
-}
 
 #illustration-filter  {
   background-color:  #7EA1C4;
@@ -192,6 +179,20 @@ a{
 }
 
 #illustration-filter:hover  {
+  background-color:  #092b3b;
+  color: #7EA1C4;
+  border: 0.2em solid #7EA1C4;
+}
+
+#typography-filter {
+  background-color:  #7EA1C4;
+  color: #092b3b;
+  border: 0.2em solid #7EA1C4;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+#typography-filter:hover  {
   background-color:  #092b3b;
   color: #7EA1C4;
   border: 0.2em solid #7EA1C4;

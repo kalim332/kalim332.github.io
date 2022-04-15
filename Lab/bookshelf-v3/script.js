@@ -200,20 +200,6 @@ document.querySelector("#conflict-filter").addEventListener("click", () => {
   }).eachPage(gotPageOfBooks, gotAllBooks);
 });
 
-// typography filter
-document.querySelector("#typography-filter").addEventListener("click", () => {
-  // loop through the books loaded from the Airtable API
-  const bookSpines = document.querySelectorAll(".book-spine");
-  hideBook();
-  bookSpines.forEach(book => {
-    book.remove();
-  });
-  books = [];
-  base("books").select({
-    view: "typography"
-  }).eachPage(gotPageOfBooks, gotAllBooks);
-});
-
 // illustration filter
 document.querySelector("#illustration-filter").addEventListener("click", () => {
   // loop through the books loaded from the Airtable API
@@ -225,6 +211,20 @@ document.querySelector("#illustration-filter").addEventListener("click", () => {
   books = [];
   base("books").select({
     view: "illustration"
+  }).eachPage(gotPageOfBooks, gotAllBooks);
+});
+
+// typography filter
+document.querySelector("#typography-filter").addEventListener("click", () => {
+  // loop through the books loaded from the Airtable API
+  const bookSpines = document.querySelectorAll(".book-spine");
+  hideBook();
+  bookSpines.forEach(book => {
+    book.remove();
+  });
+  books = [];
+  base("books").select({
+    view: "typography"
   }).eachPage(gotPageOfBooks, gotAllBooks);
 });
 
