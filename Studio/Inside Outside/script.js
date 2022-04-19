@@ -1,76 +1,157 @@
-function initComparisons() {
-  var x, i;
-  /* Find all elements with an "overlay" class: */
-  x = document.getElementsByClassName("img-comp-overlay");
-  for (i = 0; i < x.length; i++) {
-    /* Once for each "overlay" element:
-    pass the "overlay" element as a parameter when executing the compareImages function: */
-    compareImages(x[i]);
+/* globals require */
+console.log("Hello, Airtable");
+
+// load the airtable library, call it "Airtable"
+var Airtable = require("airtable");
+console.log(Airtable);
+// use the airtable library to get a variable that represents one of our bases
+// We needed to put in the right apiKey and
+// base ID here!
+var base = new Airtable({ apiKey: "key6b3SYbshia9ypy" }).base(
+  "appwgcxz249vF9glz"
+ );
+ 
+ //get "books" from table from airtable database
+//base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
+
+
+//ADD VIEW to get a select "view" "books" from table from airtable database
+base("books").select({
+  view: "main"
+}).eachPage(gotPageOfBooks, gotAllBooks);
+
+//empty array to hold our book data
+var books = [];
+
+//function that recieves our data
+function gotPageOfBooks(records, fetchNextPage){
+    console.log("gotPageOfBooks()");
+    //add the records from this page to our books array
+    books.push(...records);
+    //request more pages
+    fetchNextPage();
+}
+
+//call function 
+function gotAllBooks(err) {
+    console.log("gotAllBooks()");
+
+    //report an error 
+    if (err) {
+        console.log("error loading books");
+        console.error(err);
+        return;
+    }
+
+    //call functions to log and show books 
+    // consoleLogBooks();
+    showBooks();
+}
+
+////////////////////////////////////////////////////////
+//ADD THIS CODE, Lines 43-63
+// create the book-spines on the shelf
+function showBooks() {
+  console.log("showBooks()");
+
+  // find the shelf element
+  const shelf = document.getElementById("shelf");
+
+  // loop through the books loaded from the Airtable API
+  books.forEach((book) => {
+    // create the div, set its text and class
+    const div = document.createElement("div");
+    // div.innerText = book.fields.name;
+    // div.innerText = book.fields.price;
+    div.src = book.fields.image;
+
+    div.classList.add("book-spine");
+    // when the user clicks this book spine, call showBook and send the book data and this spine element
+    div.addEventListener("click", () => {
+      showBook(book, div);
+    });
+    // put the newly created book spine on the shelf
+    shelf.appendChild(div);
+  });
+}
+
+
+// show the detail info for a book, and highlight the active book-spine
+function showBook(book, div) {
+  console.log("showBook()", book);
+
+  // find the book detail element
+  const bookDetail = document.getElementById("book-detail");
+
+  // populate the template with the data in the provided book
+  bookDetail.getElementsByClassName("source")[0].href = book.fields.source;
+
+  // remove the .active class from any book spines that have it...
+  const shelf = document.getElementById("shelf");
+  const bookSpines = shelf.getElementsByClassName("active");
+  for (const bookSpine of bookSpines) {
+    bookSpine.classList.remove("active");
   }
-  function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
-    /* Get the width and height of the img element */
-    w = img.offsetWidth;
-    h = img.offsetHeight;
-    /* Set the width of the img element to 50%: */
-    img.style.width = (w / 2) + "px";
-    /* Create slider: */
-    slider = document.createElement("DIV");
-    slider.setAttribute("class", "img-comp-slider");
-    /* Insert slider */
-    img.parentElement.insertBefore(slider, img);
-    /* Position the slider in the middle: */
-    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-    /* Execute a function when the mouse button is pressed: */
-    slider.addEventListener("mousedown", slideReady);
-    /* And another function when the mouse button is released: */
-    window.addEventListener("mouseup", slideFinish);
-    /* Or touched (for touch screens: */
-    slider.addEventListener("touchstart", slideReady);
-     /* And released (for touch screens: */
-    window.addEventListener("touchend", slideFinish);
-    function slideReady(e) {
-      /* Prevent any other actions that may occur when moving over the image: */
-      e.preventDefault();
-      /* The slider is now clicked and ready to move: */
-      clicked = 1;
-      /* Execute a function when the slider is moved: */
-      window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchmove", slideMove);
-    }
-    function slideFinish() {
-      /* The slider is no longer clicked: */
-      clicked = 0;
-    }
-    function slideMove(e) {
-      var pos;
-      /* If the slider is no longer clicked, exit this function: */
-      if (clicked == 0) return false;
-      /* Get the cursor's x position: */
-      pos = getCursorPos(e)
-      /* Prevent the slider from being positioned outside the image: */
-      if (pos < 0) pos = 0;
-      if (pos > w) pos = w;
-      /* Execute a function that will resize the overlay image according to the cursor: */
-      slide(pos);
-    }
-    function getCursorPos(e) {
-      var a, x = 0;
-      e = (e.changedTouches) ? e.changedTouches[0] : e;
-      /* Get the x positions of the image: */
-      a = img.getBoundingClientRect();
-      /* Calculate the cursor's x coordinate, relative to the image: */
-      x = e.pageX - a.left;
-      /* Consider any page scrolling: */
-      x = x - window.pageXOffset;
-      return x;
-    }
-    function slide(x) {
-      /* Resize the image: */
-      img.style.width = x + "px";
-      /* Position the slider: */
-      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-    }
+  // ...and set it on the one just clicked
+  div.classList.add("active");
+
+  // reveal the detail element, we only really need this the first time
+  // but its not hurting to do it more than once
+  bookDetail.classList.remove("hidden");
+}
+
+function hideBook(book, div) {
+  // find the book detail element
+  const bookDetail = document.getElementById("book-detail");
+
+  // hide the book info
+  bookDetail.classList.add("hidden");
+
+  // remove the .active class from any book spines that have it
+  const shelf = document.getElementById("shelf");
+  const bookSpines = shelf.getElementsByClassName("active");
+  for (const bookSpine of bookSpines) {
+    bookSpine.classList.remove("active");
   }
 }
+
+
+
+
+// amazon filter
+document.querySelector("#amazon").addEventListener("click", () => {
+  // loop through the books loaded from the Airtable API
+  const bookSpines = document.querySelectorAll(".book-spine");
+  // // hide the book detail data in case it clashes
+  // hideBook();
+  // removes each book currently on the shelf
+  bookSpines.forEach(book => {
+    book.remove();
+  });
+  // clear the array to make way for new info
+  books = [];
+  base("books").select({
+    view: "amazon"
+  }).eachPage(gotPageOfBooks, gotAllBooks);
+});
+
+
+
+
+//  let sortLowHigh = document.getElementById('sortLowHigh');
+//  sortLowHigh.addEventListener("click", function(){
+//      // Clear the container div (remove all the previous elements)
+//      const bookSpines = document.querySelector(".book-spine");
+//      bookSpines.innerHTML = "";
+//       // Sort the songs array according to rating from low to high
+//      sortpriceLowHigh();
+//      showData();
+//  });
+
+// function sortpriceLowHigh(){
+//    books.sort(function(a, b) {
+//      // For any two songs in the songs array, compare them by their rating number
+//      // (NOTE THE ORDER HAS SWITCHED)
+//      return a.fields.price - b.fields.price;
+//    });
+//  }

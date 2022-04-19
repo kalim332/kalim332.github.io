@@ -11,54 +11,53 @@
 <body>
 
   <div class="header">
+    <div class="header-img">
+    <img src="images/logo-hori.png">
+     </div>
     <div class="break">
     </div>
-    <div class="chanel">
-    <img src="images/chanel.png">
+</div>
+
+  <div class="container">
+    <div class="leftside">
+        <h4>Brands</h4>
+        <p id="amazon">Amazon</p>
+        <a href=""><p>Balenciaga</p></a>
+        <a href=""><p>Bottega Veneta</p></a>
+        <a href=""><p>Chanel</p></a>
+        <a href=""><p>Dolce & Gabbana</p></a>
+        <a href=""><p>EGO</p></a>
     </div>
-    <div class="line">
+
+    <div class="rightside">
+      <h4>Sort</h4>
+      <a href=""><p>Relevance</p></a>
+
+      <p id="sortLowHigh">Low to High</p>
+
+      <a href=""><p>High to Low</p></a>
     </div>
-    <div class="street">
-    <img src="images/street.png">
-  </div>
-</div>
+
+    <div id="container"></div>
 
 
-  
-  <div class="bag-container">
-    <div class="lucia-bag">
-      <div class="img-comp-container">
-        <div class="img-comp-img">
-          <img src="images/lucia-bag-f.png" width="645" height="555">
-        </div>
-        <div class="img-comp-img img-comp-overlay">
-          <img src="images/lucia-bag-r.png" width="645" height="555">
-        </div>
-      </div>
-  </div>
-  <div class="break">
-  </div>
+    <nav id="shelf" class="shelf"></nav>
+    <article id="book-detail" class="book-detail hidden">
 
-  <div class="lucia-bag2">
-    <div class="img-comp-container">
-      <div class="img-comp-img">
-        <img src="images/lucia-bag-f.png" width="645" height="555">
-      </div>
-      <div class="img-comp-img img-comp-overlay">
-        <img src="images/lucia-bag-r.png" width="645" height="555">
-      </div>
+      <img class="image hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png"> 
+      <img class="bag hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png"> 
+      <img class="bag hidden" src="images/lucia-bag-f.png">
+      <img class="bag hidden" src="images/lucia-bag-f.png">
     </div>
-</div>
-<div class="break">
-</div>
 
-</div>
-
-
-<script>
-/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-initComparisons();
-</script>
+    <script src="airtable.browser.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
