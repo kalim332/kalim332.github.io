@@ -1,0 +1,89 @@
+html{
+  font-family: sans-serif;
+} 
+
+/* .header{
+  display: grid;
+  grid-template-columns: repeat(13,1fr);
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.header-img{
+  display: grid;
+  grid-column: 7/7;
+  padding: 2.5em;
+  align-items: center;
+}
+
+.break{
+  grid-column: 4/11;
+  grid-row: 3/3;
+  border-bottom: 0.1em solid;
+} */
+
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(1em auto);
+  margin-top: 6em;
+  z-index: 1;
+}
+
+#container{
+  background-color: #b4bec4;
+  grid-column: 3/11;
+  grid-row: 2/2;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ /* .genreTag {
+  padding:4px 8px;
+  border: 1px solid black;
+  margin: 4px;
+}  */
+
+ .songstyleContainer{
+  padding:1em;
+  border:1px solid black;
+  margin:1em;
+  background-color: rgb(226, 226, 226);
+  width: 11em;
+  line-height: 3%;
+}    
+
+img{
+  width: 11em;
+}
+
+span{
+  display: none;
+}
+
+p1{
+  display: none;
+}
+
+h4{
+  font-family: helvetica;
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 0em;
+  margin-top: 0.5em;
+}
+
+p{
+  font-family: helvetica;
+  font-size: 0.8em;
+  margin-bottom: 0em;
+  margin-top: 0.8em;
+}
