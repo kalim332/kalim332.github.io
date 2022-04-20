@@ -20,7 +20,13 @@
   grid-column:7/7;
   padding: 2em;
   align-items: center;
+  cursor: pointer;
 }
+
+/* .logo:hover{
+  border-left: 0.1em solid;
+  border-right: 0.1em solid;
+} */
 
 .street{
   display: grid;
