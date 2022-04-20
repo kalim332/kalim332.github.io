@@ -55,50 +55,76 @@ function showBooks() {
   console.log("showBooks()");
 
   // find the shelf element
-  const shelf = document.getElementById("shelf");
+  // const shelf = document.getElementById("shelf");
 
   // loop through the books loaded from the Airtable API
   books.forEach((book) => {
     // create the div, set its text and class
-    const div = document.createElement("div");
+    // const div = document.createElement("div");
     // div.innerText = book.fields.name;
     // div.innerText = book.fields.price;
-    div.src = book.fields.image;
+    // div.innerHTML = book.fields.image;
+    var bagimage= document.createElement("img");
+      bagimage.classList.add("image");
+      bagimage.src=book.fields.image[0].url;
+      document.querySelector(".shelf").append(bagimage);
 
-    div.classList.add("book-spine");
+    // var bagtext= document.createElement("text");
+    //   bagtext.classList.add("name");
+    //   bagtext.innerText=book.fields.name;
+    //   document.querySelector(".shelf").append(bagtext);
+  
+    // div.classList.add("book-spine");
     // when the user clicks this book spine, call showBook and send the book data and this spine element
-    div.addEventListener("click", () => {
-      showBook(book, div);
-    });
+    // div.addEventListener("click", () => {
+    //   showBook(book, div);
+    // });
     // put the newly created book spine on the shelf
-    shelf.appendChild(div);
+    // shelf.appendChild(div);
   });
 }
 
+// amazon filter
+document.querySelector("#amazon").addEventListener("click", () => {
+  // loop through the books loaded from the Airtable API
+  document.querySelectorAll(".shelf");
+  // hide the book detail data in case it clashes
+  hideBook();
+  // removes each book currently on the shelf
+  books.forEach(book => {
+    book.remove();
+  });
+  // clear the array to make way for new info
+  books = [];
+  base("books").select({
+    view: "amazon"
+  }).eachPage(gotPageOfBooks, gotAllBooks);
+});
 
-// show the detail info for a book, and highlight the active book-spine
-function showBook(book, div) {
-  console.log("showBook()", book);
 
-  // find the book detail element
-  const bookDetail = document.getElementById("book-detail");
+// // show the detail info for a book, and highlight the active book-spine
+// function showBook(book, div) {
+//   console.log("showBook()", book);
 
-  // populate the template with the data in the provided book
-  bookDetail.getElementsByClassName("source")[0].href = book.fields.source;
+//   // find the book detail element
+//   const bookDetail = document.getElementById("book-detail");
 
-  // remove the .active class from any book spines that have it...
-  const shelf = document.getElementById("shelf");
-  const bookSpines = shelf.getElementsByClassName("active");
-  for (const bookSpine of bookSpines) {
-    bookSpine.classList.remove("active");
-  }
-  // ...and set it on the one just clicked
-  div.classList.add("active");
+//   // populate the template with the data in the provided book
+//   bookDetail.getElementsByClassName("source")[0].href = book.fields.source;
 
-  // reveal the detail element, we only really need this the first time
-  // but its not hurting to do it more than once
-  bookDetail.classList.remove("hidden");
-}
+//   // remove the .active class from any book spines that have it...
+//   const shelf = document.getElementById("shelf");
+//   const bookSpines = shelf.getElementsByClassName("active");
+//   for (const bookSpine of bookSpines) {
+//     bookSpine.classList.remove("active");
+//   }
+//   // ...and set it on the one just clicked
+//   div.classList.add("active");
+
+//   // reveal the detail element, we only really need this the first time
+//   // but its not hurting to do it more than once
+//   bookDetail.classList.remove("hidden");
+// }
 
 function hideBook(book, div) {
   // find the book detail element
@@ -118,22 +144,6 @@ function hideBook(book, div) {
 
 
 
-// amazon filter
-document.querySelector("#amazon").addEventListener("click", () => {
-  // loop through the books loaded from the Airtable API
-  const bookSpines = document.querySelectorAll(".book-spine");
-  // // hide the book detail data in case it clashes
-  // hideBook();
-  // removes each book currently on the shelf
-  bookSpines.forEach(book => {
-    book.remove();
-  });
-  // clear the array to make way for new info
-  books = [];
-  base("books").select({
-    view: "amazon"
-  }).eachPage(gotPageOfBooks, gotAllBooks);
-});
 
 
 

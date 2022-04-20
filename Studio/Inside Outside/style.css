@@ -89,6 +89,7 @@
 a,a:link {
   color: #000000;
   text-decoration: none;
+  text-transform: underline;
 }
 
 a:hover {
@@ -96,13 +97,14 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* add this to hide our placeholder  */
 .hidden {
   display: none !important;
 }
 
 .shelf {
-  background-color: #6d7c84;
+  background-color: #b4bec4;
   grid-column: 3/11;
   grid-row: 2/2;
   margin-top: 1.5em;
@@ -112,7 +114,13 @@ a:hover {
   justify-content: center;
 }
 
-.shelf .book-spine {
+.image{
+  width: 12em;
+  height: auto;
+  padding: 1em;
+}
+
+/* .shelf .book-spine {
   padding: 1em;
   width: 13em;
   height: auto;
@@ -134,5 +142,6 @@ a:hover {
 .book-detail .more {
   margin: 1em;
   text-align: center;
-  /* line-height: 1.5; */
-}
+  /* line-height: 1.5;
+} */
+
