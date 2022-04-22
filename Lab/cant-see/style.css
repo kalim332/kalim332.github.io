@@ -40,19 +40,20 @@
   z-index: 1;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 650px) {
   
   .text{
     font-size: 1.6em;
+    padding-top: 1%;
   }
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   
   .text{
     font-size: 1.6em;
-    margin-top: 8%;
+    padding-top: 8%;
   }
 
 }
