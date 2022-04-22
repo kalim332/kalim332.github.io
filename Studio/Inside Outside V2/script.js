@@ -159,7 +159,7 @@ function showData() {
        }
      });
 
-     let indieButton = document.getElementById("showIndieButton");
+     let indieButton = document.getElementById("showSheinButton");
      indieButton.addEventListener("click", function () {
        if (songContainer.classList.contains("SHEIN")) {
          songContainer.style.display = "block";
