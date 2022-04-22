@@ -1,23 +1,4 @@
-let box = document.querySelector("#box");
-
-// Mouseover Event - detect when the mouse has moved over this div
-// Note: you can also use "mouseenter in some contexts"
-
-box.addEventListener("mouseover", function(event){
-  box.style.transform = 'scale(.96)';
-});
-
-
-// Mouseleave Event - detect when the mouse has leaved this div
-
-box.addEventListener("mouseleave", function(){
-  box.style.transform = 'scale(1)';
-});
-
-
-
 let myCursor = document.querySelector("#customCursor");
-
 
 // Detect when the mousemoved anywhere in our webpage window
 window.addEventListener("mousemove", function(event){
@@ -37,3 +18,25 @@ window.addEventListener("mousemove", function(event){
   myCursor.style.top = (event.pageY - 20) + "px";
   myCursor.style.left = (event.pageX - 20) + "px";
 });
+
+
+
+
+// I ATTEMPTED TO GET THE SCALING TO WORK IN JAVASCRIPT BUT THE CLASS WOULD ONLY APPLY TO ONE DIV
+
+
+
+// let scale = document.querySelector(".scale");
+
+// // Mouseover Event - detect when the mouse has moved over this div
+// // Note: you can also use "mouseenter in some contexts"
+
+// scale.addEventListener("mouseover", function(event){
+//   scale.style.transform = 'scale(.96)';
+// });
+
+// // Mouseleave Event - detect when the mouse has leaved this div
+
+// scale.addEventListener("mouseleave", function(){
+//   scale.style.transform = 'scale(1)';
+// });
