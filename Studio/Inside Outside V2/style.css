@@ -33,7 +33,7 @@ html{
 .main{
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(1,1fr);
   padding-top: 6em;
   z-index: 1;
 }
@@ -156,11 +156,7 @@ text-decoration: underline;
 
 
 
- /* .genreTag {
-  padding:4px 8px;
-  border: 1px solid black;
-  margin: 4px;
-}  */
+
 
   
 

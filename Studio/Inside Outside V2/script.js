@@ -90,13 +90,13 @@ function showData() {
      artistElement.innerText = song.fields.artist;
      songContainer.appendChild(artistElement);
 
-     /*******************
-     ADD SONG RATING
+    /*******************
+     ADD PRICE
     *******************/
 
-     let ratingElement = document.createElement("p");
-     ratingElement.innerText = "$" + song.fields.rating;
-     songContainer.appendChild(ratingElement);
+     let priceElement = document.createElement("h4");
+     priceElement.innerText = "$" + song.fields.price.toFixed(2);
+     songContainer.appendChild(priceElement);
      
     /*******************
      ADD GENRES
@@ -128,14 +128,14 @@ function showData() {
       songContainer.classList.add(artist);
     });
 
-    /*******************
-     LINK TO SOURCE
-     *******************/
+    // /*******************
+    //  LINK TO SOURCE
+    //  *******************/
 
     // let sourceList = song.fields.source;
 
     // sourceList.forEach(function (source) {
-    //    const  sourceElement = document.createElement("h3");
+    //    const  sourceElement = document.createElement("h4");
     //    sourceElement.classList.add("sourceTag");
     //    sourceElement.innerText = source;
     //    songContainer.appendChild(sourceElement);
