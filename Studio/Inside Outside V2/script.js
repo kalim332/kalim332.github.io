@@ -128,6 +128,18 @@ function showData() {
       songContainer.classList.add(artist);
     });
 
+
+
+      /*******************
+     ADD URL
+     *******************/
+
+    //  let urlElement = document.createElement("h6");
+    //  // console.log(song.fields.URL);
+    //   urlElement.innerHTML = song.fields.url;
+    //   songContainer.appendChild(urlElement);
+
+
     // /*******************
     //  LINK TO SOURCE
     //  *******************/
@@ -139,19 +151,92 @@ function showData() {
     //    sourceElement.classList.add("sourceTag");
     //    sourceElement.innerText = source;
     //    songContainer.appendChild(sourceElement);
-    //    // TODO: Add this genre name as a class to the songContainer
-    //   songContainer.classList.add(source);
+
+    // //    // TODO: Add this genre name as a class to the songContainer
+    //   // songContainer.classList.add(source);
     // });
     
 
 
 
      /***********
-      TODO: CREATE FILTER-BY-GENRE FUNCTIONALITY
+      Color Filters
       **********/
 
-     let classicalButton = document.getElementById("showGreenButton");
-     classicalButton.addEventListener("click", function () {
+      let blackButton = document.getElementById("showBlackButton");
+      blackButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Black")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+ 
+      let whiteButton = document.getElementById("showWhiteButton");
+      whiteButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("White")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+ 
+      let brownButton = document.getElementById("showBrownButton");
+      brownButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Brown")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+ 
+      let goldButton = document.getElementById("showGoldButton");
+      goldButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Gold")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+
+       let greyButton = document.getElementById("showGreyButton");
+      greyButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Grey")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+
+      let redButton = document.getElementById("showRedButton");
+      redButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Red")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+
+      let orangeButton = document.getElementById("showOrangeButton");
+      orangeButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Orange")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+
+      let yellowButton = document.getElementById("showYellowButton");
+      yellowButton.addEventListener("click", function () {
+        if (songContainer.classList.contains("Yellow")) {
+          songContainer.style.display = "block";
+        } else {
+          songContainer.style.display = "none";
+        }
+      });
+
+     let greenButton = document.getElementById("showGreenButton");
+     greenButton.addEventListener("click", function () {
        if (songContainer.classList.contains("Green")) {
          songContainer.style.display = "block";
        } else {
@@ -159,8 +244,192 @@ function showData() {
        }
      });
 
-     let indieButton = document.getElementById("showSheinButton");
-     indieButton.addEventListener("click", function () {
+     let blueButton = document.getElementById("showBlueButton");
+     blueButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Blue")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let purpleButton = document.getElementById("showPurpleButton");
+     purpleButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Purple")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let pinkButton = document.getElementById("showPinkButton");
+     pinkButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Pink")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let multiButton = document.getElementById("showMultiButton");
+     multiButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Multi")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     /***********
+      Brand Filters
+      **********/
+
+     let AmazonButton = document.getElementById("showAmazonButton");
+    AmazonButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Amazon")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let BAGINCButton = document.getElementById("showBAGINCButton");
+     BAGINCButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("BAGINC")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let BalenciagaButton = document.getElementById("showBalenciagaButton");
+     BalenciagaButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Balenciaga")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let Bottega_VenetaButton = document.getElementById("showBottega_VenetaButton");
+     Bottega_VenetaButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Bottega_Veneta")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let ChanelButton = document.getElementById("showChanelButton");
+     ChanelButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Chanel")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let ChloeButton = document.getElementById("showChloeButton");
+     ChloeButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Chloe")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let DiorButton = document.getElementById("showDiorButton");
+     DiorButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Dior")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let Dolce_GabbanaButton = document.getElementById("showDolce_GabbanaButton");
+     Dolce_GabbanaButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Dolce_Gabbana")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let EGOButton = document.getElementById("showEGOButton");
+     EGOButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("EGO")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let GOODNIGHT_MACAROONButton = document.getElementById("showGOODNIGHT_MACAROONButton");
+     GOODNIGHT_MACAROONButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("GOODNIGHT_MACAROON")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let GoyardButton = document.getElementById("showGoyardButton");
+     GoyardButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Goyard")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let GucciButton = document.getElementById("showGucciButton");
+     GucciButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Gucci")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let HermesButton = document.getElementById("showHermesButton");
+     HermesButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Hermes")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let JacquemusButton = document.getElementById("showJacquemusButton");
+     JacquemusButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Jacquemus")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let Louis_VuittonButton = document.getElementById("showLouis_VuittonButton");
+     Louis_VuittonButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Louis_Vuitton")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let PEOPSHOPButton = document.getElementById("showPEOPSHOPButton");
+     PEOPSHOPButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("PEOPSHOP")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+     let SHEINButton = document.getElementById("showSHEINButton");
+     SHEINButton.addEventListener("click", function () {
        if (songContainer.classList.contains("SHEIN")) {
          songContainer.style.display = "block";
        } else {
@@ -168,23 +437,27 @@ function showData() {
        }
      });
 
-    //  let dreampopButton = document.getElementById("showDreampopButton");
-    //  dreampopButton.addEventListener("click", function () {
-    //    if (songContainer.classList.contains("dreampop")) {
-    //      songContainer.style.display = "block";
-    //    } else {
-    //      songContainer.style.display = "none";
-    //    }
-    //  });
+     let Tiger_LyLyButton = document.getElementById("showTiger_LyLyButton");
+     Tiger_LyLyButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("Tiger_LyLy")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
 
-    //  let popButton = document.getElementById("showPopButton");
-    //  popButton.addEventListener("click", function () {
-    //    if (songContainer.classList.contains("pop")) {
-    //      songContainer.style.display = "block";
-    //    } else {
-    //      songContainer.style.display = "none";
-    //    }
-    //  });
+     let TWENTY_FOURButton = document.getElementById("showTWENTY_FOURButton");
+     TWENTY_FOURButton.addEventListener("click", function () {
+       if (songContainer.classList.contains("TWENTY_FOUR")) {
+         songContainer.style.display = "block";
+       } else {
+         songContainer.style.display = "none";
+       }
+     });
+
+  
+     
+     
 
      let resetButtton = document.getElementById("resetButton");
      resetButtton.addEventListener("click", function () {

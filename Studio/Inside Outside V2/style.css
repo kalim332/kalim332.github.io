@@ -181,6 +181,15 @@ h4{
   margin-top: 0.5em;
 }
 
+h6{
+  font-family: helvetica;
+  font-size: 0.02em;
+  font-weight: 500;
+  line-height: 300%;
+  margin-bottom: 0em;
+  margin-top: 0.5em;
+}
+
 p{
   font-family: helvetica;
   font-size: 0.8em;
