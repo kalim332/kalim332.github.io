@@ -461,7 +461,7 @@ function showData() {
 
      let resetButtton = document.getElementById("resetButton");
      resetButtton.addEventListener("click", function () {
-       songContainer.style.display = "block";
+      window.location.reload();
      });
      
      songsContainer.appendChild(songContainer);
@@ -482,7 +482,7 @@ function showData() {
   function sortRatingHighLow(){
     songs.sort(function(a, b) {
       // For any two songs in the songs array, compare them by their rating number
-     return b.fields.rating - a.fields.rating;
+     return b.fields.price - a.fields.price;
     });
   }
 
@@ -500,6 +500,6 @@ function showData() {
     songs.sort(function(a, b) {
       // For any two songs in the songs array, compare them by their rating number
       // (NOTE THE ORDER HAS SWITCHED)
-      return a.fields.rating - b.fields.rating;
+      return a.fields.price - b.fields.price;
     });
  }
