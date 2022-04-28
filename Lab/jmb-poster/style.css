@@ -9,14 +9,15 @@ html{
 .container1{
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: 3em auto auto;
+  grid-template-rows: 3em auto auto auto;
   place-items: center;
+  /* transform: scale(90%); */
 }
 
 
 .circle1 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   height: 40em;
   width: 40em;
@@ -28,7 +29,7 @@ html{
 
 .circle2 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -42,7 +43,7 @@ html{
 
 .circle3 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -56,7 +57,7 @@ html{
 
 .circle4 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -70,7 +71,7 @@ html{
 
 .circle5 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -84,7 +85,7 @@ html{
 
  .circle6 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -98,7 +99,7 @@ html{
 
 .circle7 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -112,7 +113,7 @@ html{
 
 .circle8 {
   grid-column: 1/-1;
-  grid-row: 2/3;
+  grid-row: 2/2;
   position: relative;
   top: 50%;
   left: 50%;
@@ -127,7 +128,7 @@ html{
 
 .text1 {
   grid-column: 1/5;
-  grid-row: 3/-1;
+  grid-row: 3/3;
   position: relative;
   color: #E8E7E4;
   font-size: 0.2em;
@@ -136,7 +137,7 @@ html{
 
 .text2 {
   grid-column: 4/7;
-  grid-row: 3/-1;
+  grid-row: 3/3;
   position: relative;
   color: #E8E7E4;
   font-size: 5em;
@@ -150,7 +151,7 @@ html{
 
 .text3 {
   grid-column: 6/10;
-  grid-row: 3/-1;
+  grid-row: 3/3;
   position: relative;
   color: #E8E7E4;
   font-size: 0.2em;
@@ -159,7 +160,7 @@ html{
 
 .text4 {
   grid-column: 8/12;
-  grid-row: 3/-1;
+  grid-row: 3/3;
   position: relative;
   color: #E8E7E4;
   font-size: 0.2em;
@@ -168,7 +169,7 @@ html{
 
 .text5 {
   grid-column: 10/12;
-  grid-row: 3/-1;
+  grid-row: 3/3;
   position: relative;
   color: #E8E7E4;
   font-size: 0.2em;
@@ -177,11 +178,121 @@ html{
 
 
 
+.circle1-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  height: 14em;
+  width: 40em;
+  background-image: linear-gradient(to bottom right, #7A251F 25%, #DCD4D2, #2D4746 75%);
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 1em;
+}
+
+.circle2-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 13.5em;
+  width: 38.5em;
+  background-image: linear-gradient(to bottom right, #B83F28 25%, #E2DDD7, #4A726F 75%);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.circle3-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 13em;
+  width: 37em;
+  background-image: linear-gradient(to bottom right, #C2743E 25%, #E0DAD8, #8F9F98 75%);
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.circle4-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 12.5em;
+  width: 35.5em;
+  background-color: #E8E7E4;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.circle5-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 12em;
+  width: 34em;
+  background-image: linear-gradient(to bottom right, #C2743E 25%, #E0DAD8, #8F9F98 75%);
+  border-radius: 50%;
+  z-index: 5;
+}
+
+ .circle6-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 11.5em;
+  width: 32.5em;
+  background-image: linear-gradient(to bottom right, #B83F28 25%, #E2DDD7, #4A726F 75%);
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.circle7-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 11em;
+  width: 31em;
+  background-image: linear-gradient(to bottom right, #7A251F 25%, #DCD4D2, #2D4746 75%);
+  border-radius: 50%;
+  z-index: 7;
+}
+
+.circle8-2 {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10.5em;
+  width: 29.5em;
+  background-color: #1D192F;
+  border-radius: 50%;
+  z-index: 8;
+}
 
 
 
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1150px) {
   html{
     background-color: #1D192F;
   }
@@ -189,14 +300,14 @@ html{
   .container1{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 3em auto auto auto;
+    grid-template-rows: 3em auto auto auto auto auto;
     place-items: center;
   }
   
   
   .circle1 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     height: 35em;
     width: 35em;
@@ -208,7 +319,7 @@ html{
   
   .circle2 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -222,7 +333,7 @@ html{
   
   .circle3 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -236,7 +347,7 @@ html{
   
   .circle4 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -250,7 +361,7 @@ html{
   
   .circle5 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -264,7 +375,7 @@ html{
   
    .circle6 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -278,7 +389,7 @@ html{
   
   .circle7 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -292,7 +403,7 @@ html{
   
   .circle8 {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 2/2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -306,19 +417,20 @@ html{
   
   
   .text1 {
-    grid-column: 4/7;
-    grid-row: 4/-1;
+    grid-column: 4/5;
+    grid-row: 5/5;
     position: relative;
     color: #E8E7E4;
     font-size: 0.2em;
     font-family: 'Public Sans', sans-serif;
     padding: 4em;
-     text-align: right;
+    text-align: right;
+    margin-top: 1em;
   }
   
   .text2 {
     grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-row: 3/3;
     position: relative;
     color: #E8E7E4;
     font-size: 5em;
@@ -330,38 +442,149 @@ html{
   }
   
   .text3 {
-    grid-column: 7/10;
-    grid-row: 4/-1;
-    position: relative;
-    color: #E8E7E4;
-    font-size: 0.2em;
-    font-family: 'Public Sans', sans-serif;
-    padding: 4em;
-     text-align: left;
-  }
-  
-  .text4 {
-    grid-column: 4/7;
-    grid-row: 5/-1;
-    position: relative;
-    color: #E8E7E4;
-    font-size: 0.2em;
-    font-family: 'Public Sans', sans-serif;
-    padding: 4em;
-    text-align: right;
-  }
-  
-  .text5 {
-    grid-column: 6/10;
-    grid-row: 5/-1;
+    grid-column: 5/7;
+    grid-row: 5/5;
     position: relative;
     color: #E8E7E4;
     font-size: 0.2em;
     font-family: 'Public Sans', sans-serif;
     padding: 4em;
     text-align: left;
+    margin-top: 1em;
+  }
+  
+  .text4 {
+    grid-column: 7/9;
+    grid-row: 5/5;
+    position: relative;
+    color: #E8E7E4;
+    font-size: 0.2em;
+    font-family: 'Public Sans', sans-serif;
+    padding: 4em;
+    text-align: right;
+    margin-top: 1em;
+  }
+  
+  .text5 {
+    grid-column: 8/11;
+    grid-row: 5/5;
+    position: relative;
+    color: #E8E7E4;
+    font-size: 0.2em;
+    font-family: 'Public Sans', sans-serif;
+    padding: 4em;
+    text-align: left;
+    margin-top: 1em;
   }
 
-
+  .circle1-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    height: 14em;
+    width: 35em;
+    background-image: linear-gradient(to bottom right, #7A251F 25%, #DCD4D2, #2D4746 75%);
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 1em;
+  }
+  
+  .circle2-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 13.5em;
+    width: 33.5em;
+    background-image: linear-gradient(to bottom right, #B83F28 25%, #E2DDD7, #4A726F 75%);
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .circle3-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 13em;
+    width: 32em;
+    background-image: linear-gradient(to bottom right, #C2743E 25%, #E0DAD8, #8F9F98 75%);
+    border-radius: 50%;
+    z-index: 3;
+  }
+  
+  .circle4-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 12.5em;
+    width: 30.5em;
+    background-color: #E8E7E4;
+    border-radius: 50%;
+    z-index: 4;
+  }
+  
+  .circle5-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 12em;
+    width: 29em;
+    background-image: linear-gradient(to bottom right, #C2743E 25%, #E0DAD8, #8F9F98 75%);
+    border-radius: 50%;
+    z-index: 5;
+  }
+  
+   .circle6-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 11.5em;
+    width: 27.5em;
+    background-image: linear-gradient(to bottom right, #B83F28 25%, #E2DDD7, #4A726F 75%);
+    border-radius: 50%;
+    z-index: 6;
+  }
+  
+  .circle7-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 11em;
+    width: 26em;
+    background-image: linear-gradient(to bottom right, #7A251F 25%, #DCD4D2, #2D4746 75%);
+    border-radius: 50%;
+    z-index: 7;
+  }
+  
+  .circle8-2 {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    position: relative;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10.5em;
+    width: 24.5em;
+    background-color: #1D192F;
+    border-radius: 50%;
+    z-index: 8;
+  }
 
 }
