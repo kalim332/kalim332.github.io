@@ -15,4 +15,14 @@ var links = [
               };
              
     
-    document.getElementById("link").innerHTML = openSite();
+//     document.getElementById("link").innerHTML = openSite();
+
+
+// var links = ['https://cant-not-tweet-this.com/', 'http://eelslap.com/']
+
+// var rand = links[Math.floor(Math.random() * links.length)];
+
+
+//     function Redirect() {
+//         window.location = rand;
+//     }
