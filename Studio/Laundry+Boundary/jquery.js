@@ -1,6 +1,7 @@
 var links = [
-              "google.com",
-              "fxe.html"
+              "https://kalim332.github.io/Studio/Laundry+Boundary/fxw.html",
+              "https://kalim332.github.io/Studio/Laundry+Boundary/fxa.html",
+              "https://kalim332.github.io/Studio/Laundry+Boundary/fxe.html"
               ]
 
             function openSite() {
