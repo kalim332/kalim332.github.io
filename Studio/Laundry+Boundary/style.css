@@ -11,7 +11,7 @@
       display: grid;
       grid-template-columns: repeat(5,1fr);
       /* grid-template-rows: 1fr 1fr max-content 1fr max-content; */
-      grid-template-rows: 1fr 1fr 2em 1fr 1fr;
+      grid-template-rows: 1fr 1fr 7em 1fr 1fr;
     }
     
     
@@ -22,7 +22,7 @@
     }
 
     .elements img{
-      max-height: 100%;
+      max-height: 120%;
       width:100%;
     }
 
@@ -36,7 +36,7 @@
 
     .start-text p{
       color: #ffffff;
-      font-size: 3em;
+      font-size: 4em;
       word-spacing: .5em;
       animation: 1.8s blnk infinite step-end;
    }
@@ -75,6 +75,8 @@
       grid-row: 2/2;
       background: url("images/fire.png") no-repeat;
       background-size: cover;
+      margin: 1em;
+      padding: 2em;
     }
 
     .element-f:hover{
@@ -94,6 +96,8 @@
       grid-row: 2/2;
       background: url("images/water.png") no-repeat;
       background-size: cover;
+      margin: 1em;
+      padding: 2em;
     }
 
     .element-w:hover{
@@ -113,6 +117,8 @@
       grid-row: 2/2;
       background: url("images/earth.png") no-repeat;
       background-size: cover;
+      margin: 1em;
+      padding: 2em;
     }
 
     .element-e:hover{
@@ -132,6 +138,8 @@
       grid-row: 2/2;
       background: url("images/air.png") no-repeat;
       background-size: cover;
+      margin: 1em;
+      padding: 2em;
     }
 
     .element-a:hover{
@@ -157,7 +165,7 @@
 
    .element-text p{
       color: #ffffff;
-      font-size: 3em;
+      font-size: 4em;
       word-spacing: .5em;
    }
     .element-text :link{
@@ -175,26 +183,4 @@
       width:100%;
       position: absolute;
       bottom: 0px;
-    }
-
-
-
-
-    .container3{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      grid-template-rows: repeat(1,1fr);
-   }
-
-    .vs {
-      grid-column: 1/-1;
-      grid-row: 1/-1;
-      display: flex;
-      justify-content: center;
-      /* background: url("images/fxw.png") no-repeat;
-      background-size: cover; */
-    }
-
-    .vs img{
-      object-fit: fill;
     }

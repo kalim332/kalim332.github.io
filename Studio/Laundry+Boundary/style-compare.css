@@ -1,0 +1,189 @@
+@font-face {
+   font-family: connection;
+   src: url("ConnectionBold.otf") format("opentype");
+}    
+
+   html{
+      background-color: #01C3FF;
+   }
+    
+
+  .container{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   grid-template-rows: repeat(4,1fr);
+} 
+
+.container1{
+   grid-column: 1/-1;
+   grid-row: 1/-1;
+   z-index: 1;
+} 
+
+.container2{
+   grid-column: 1/-1;
+   grid-row: 1/-1;
+   z-index: 2;
+   animation: 1.7s dley;
+ } 
+
+ .container2, img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 100%;
+} 
+
+@keyframes dley{  
+  
+   0%,49% {
+     opacity: 0%;
+   }
+   50%,100% {
+      opacity: 100%;
+   }
+ } 
+
+ .container2-5{
+   grid-column: 1/-1;
+   grid-row: 1/-1;
+   z-index: 4;
+   animation: 2s ovly forwards;
+ } 
+
+ .container2-5, img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 100%;
+} 
+
+@keyframes ovly{  
+  
+   0%,69% {
+     opacity: 100%;
+   }
+   70%,100% {
+      opacity: 0%;
+   }
+ }  
+
+
+.container3{
+   grid-column: 1/-1;
+   grid-row: 1/-1;
+   z-index: 3;
+   animation: 2.5s shft;
+   animation-iteration-count: 1;
+   animation-delay: 1.7s;
+ } 
+
+ .container3, img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 100%;
+} 
+
+ @keyframes shft{  
+  
+   0%,9% {
+    opacity: 0%;
+   }
+   10%,19% {
+   opacity: 100%;
+   }
+   20%,29% {
+      opacity: 0%;
+   }
+   30%,39% {
+     opacity: 100%;
+   }
+   40%,49% {
+   opacity: 0%;
+   } 
+   50%,59% {
+      opacity: 100%;
+   }
+   60%,69% {
+   opacity: 0%;
+   } 
+   70%,79% {
+      opacity: 100%;
+   }
+   80%,89% {
+    opacity: 0%;
+    } 
+   90%,100% {
+       opacity: 100%;
+    }
+ }
+
+   .container4{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: 5;
+    animation: 5.5s appr ;
+ } 
+
+ .container4, img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 100%;
+} 
+
+@keyframes appr{  
+    
+   0% {
+     opacity: 0%;
+  }
+   90% {
+      opacity: 0%;
+   }
+   100% {
+      opacity: 100%;
+   }
+}
+
+
+    .start-text{
+      grid-column: 1/1;
+      grid-row: 4/4;
+      width:100%;
+      position: bottom;
+      bottom: 4em;
+      font-family: connection;
+      text-align: center;
+      z-index: 6;
+      animation: 6s appr;
+    }
+
+    .start-text p{
+      color: #ffffff;
+      font-size: 4em;
+      word-spacing: .5em;
+      animation: 1.8s blnk infinite step-end;
+      /* animation-delay: 4s; */
+   }
+
+    .start-text :link{
+      text-decoration: none;
+   }
+   
+    .start-text :visited {
+      text-decoration: none;
+    }
+   
+    .start-text :hover{
+      animation-play-state: paused;
+   }
+
+    @keyframes blnk{  
+      0% {
+         opacity: 0%;
+      }
+      50% {
+         opacity: 100%;
+      }
+    }
