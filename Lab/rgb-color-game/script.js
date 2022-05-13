@@ -1,7 +1,7 @@
 
 
 //variables for the javascript code are established and defined
-//the corrisponding css is also linked
+//the corresponding css is also linked
 
 var numSquares = 6;
 var colors = [];
@@ -15,8 +15,8 @@ var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 var easyButton = document.querySelector(".mode");
 
-//the intial display of an RGB color is input into the top text div and the connection to the picked color variable is established
-//the inital color squares are placed on the page
+//the initial display of an RGB color is input into the top text div and the connection to the picked color variable is established
+//the initial color squares are placed on the page
 //the Easy/Hard mode selector is placed on the page
 //the reset button is placed on the page
 
@@ -35,16 +35,17 @@ resetButton.addEventListener("click", function() {
 	reset();
 });
 
-//a fuction for a variable number of squares is establisehd within the tag that was initated in the section above the background colors are ransomized
-//an event listener is added to the a click selection of one of the ransomized square prompting an if else function
-
-//an if statment is created for the selection of the colored square
+//a function for a variable number of squares is established within the tag that was initiated in the section above
+//the background colors are randomized
+//an event listener is added to the click selection of one of the randomized square prompting an if else function
+ 
+//an if statement is created for the selection of the colored square
 //an event listener is added with a click function
 //if the "clicked color" is the correct "picked color" then the message "correct" will be displayed
-//a reset button will also be displayed prompting you to "play again" 
+//a reset button will also be displayed prompting you to "play again"
 //all the colored boxes will change to the correct "picked color"
-
-//if the correct color is not selected then the background color of that square changes to grey making it not visable anylonger
+ 
+//if the correct color is not selected then the background color of that square changes to gray making it no longer visible
 //the message "try again" will also appear
  
 function setupSquares() {
@@ -65,15 +66,15 @@ function setupSquares() {
 	}
 }
 
-//a function for the mode selection is established within the tag that was initated in the first section
+//a function for the mode selection is established within the tag that was initiated in the first section
 //an event listener is added to the a click selection of one of the mode buttons
 //the display will remove the items not associated with the selection
-
-//the class list selected is added and an if statment is created
-//if the "easy" text is slected then 3 squares will apprear on the screen
-//if anyhting else is selected then the numbers of squares will reamin as 6
-
-//the fuction resets in order to be performed multipul times
+ 
+//the class list selected is added and an if statement is created
+//if the "easy" text is selected then 3 squares will appear on the screen
+//if anything else is selected then the numbers of squares will remain as 6
+ 
+//the function resets in order to be performed multiple times
 
 
 function setupMode() {
@@ -93,15 +94,15 @@ function setupMode() {
 		});
 	}
 }
-
-//a function fo the color reset is established within the tag that was initated in the first section
-//the funtction promptes the colors to be randomized within the squares
+ 
+//a function for the color reset is established within the tag that was initiated in the first section
+//the function prompts the colors to be randomized within the squares
 //a picked color is established as the one being sought out by the game
 //a reset button is connected to the "new colors" text
-
-//the styled display of the squares is establsuj in a if statment 
-//if there is a color present then the display will be "block" and teh background color will mimick the one established
-//if not color is present there will be no display of the square
+ 
+//the styled display of the squares is established in a if statement
+//if there is a color present then the display will be "block" and the background color will mimic the one established
+//if no color is present there will be no display of the square
 
 function reset() {
 	colors = genRandomColors(numSquares);
@@ -121,7 +122,7 @@ function reset() {
 	}
 }
 
-//the fuction for a changed color is established where the background color always changes to the selected color
+//the function for a changed color is established where the background color always changes to the selected color
 
 function changeColors(color) {
 	for(var i = 0; i < squares.length; i++) {
@@ -130,7 +131,7 @@ function changeColors(color) {
 	}
 }
 
-//the fuction for choosing a random color is established 
+//the function for choosing a random color is established 
 //the colors will always return back randomly
 
 function chooseColor() {
@@ -138,8 +139,8 @@ function chooseColor() {
 	return colors[random];
 }
 
-//the fuction for generating a random color is established for every initaiton to make a color 
-//the return is variably agragated
+//the function for generating a random color is established for every initiation to make a color
+//the return is variably aggregated
 
 function genRandomColors(num) {
 	var arr = [];
@@ -149,8 +150,8 @@ function genRandomColors(num) {
 	return arr;
 }
 
-//the fuction for generating a RGB color is established by randomly assigning a number from 0-256 
-//the return adds commas between the randomly selected numbers
+//the function for generating a RGB color is established by randomly assigning a number from 0-256 three times
+//the return adds commas between the randomly selected numbers giving it proper syntax
 
 function makeColor() {
 	var r = Math.floor(Math.random() * 256);
