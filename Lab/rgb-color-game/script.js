@@ -1,3 +1,19 @@
+/////////////
+
+//Original Code by: Michelle Huang
+//CodePen: https://codepen.io/itsmhuang/pen/oxaReK 
+
+//What drew you to this interaction/code/work and why do you find it compelling?
+    //I was drawn to this code because for my final studio project I was looking to make a similarly simple one sided interaction between a user and a computer generated output. 
+    //Generally I find anything to do with color appealing. I also liked that this game went beyond the surface level by giving other options such as the easy/ hard modes, and the option to generate new colors if you don't like the ones prompted to you.
+    //I was surprised by the manageable amount of code needed to create something like this as I expected a lot more difficulty and complex concepts. At a glance all the functions of the code appear to be relatively straightforward.
+
+//What do you hope to gain by understanding it better?
+    //Carefully going over this code line by line, I hope to gain a better understanding of randomization in Javascript. I also want to see how they implemented the filtering options into the code, as my only other experience with this was through Airtable. 
+    //Immediately upon finding this CodePen I saw a lot of stylistic potential in using this game as a baseline. I may even go back at some point to turn this interface into a more compellingly designed platform. 
+
+
+/////////////
 
 
 //variables for the javascript code are established and defined
@@ -67,7 +83,7 @@ function setupSquares() {
 }
 
 //a function for the mode selection is established within the tag that was initiated in the first section
-//an event listener is added to the a click selection of one of the mode buttons
+//an event listener is added to the click selection of one of the mode buttons
 //the display will remove the items not associated with the selection
  
 //the class list selected is added and an if statement is created
@@ -139,8 +155,8 @@ function chooseColor() {
 	return colors[random];
 }
 
-//the function for generating a random color is established for every initiation to make a color
-//the return is variably aggregated
+//the function for generating a random color is established for all variables to make a color
+//the return is variably aggregated in a string
 
 function genRandomColors(num) {
 	var arr = [];
@@ -151,7 +167,7 @@ function genRandomColors(num) {
 }
 
 //the function for generating a RGB color is established by randomly assigning a number from 0-256 three times
-//the return adds commas between the randomly selected numbers giving it proper syntax
+//the return adds commas between the randomly selected numbers giving it proper RGB syntax
 
 function makeColor() {
 	var r = Math.floor(Math.random() * 256);
